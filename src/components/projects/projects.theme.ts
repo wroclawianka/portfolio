@@ -4,7 +4,7 @@ export const projectsTheme = {
     baseStyle: {
       root: {
         background: 'green',
-        minHeight: '100vh',
+        minHeight: '100vh'
       }
     }
   }

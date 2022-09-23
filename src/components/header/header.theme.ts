@@ -3,15 +3,20 @@ export const headerTheme = {
     parts: ['root', 'heading', 'highlight'],
     baseStyle: {
       root: {
-        p: '30px 20px',
-        pl: '90px',
-        bg: 'rgba(255, 255, 255, 0.5)',
+        p: '0 30px 10px 30px',
+        background: 'white',
+        width: '100%',
+        position: 'fixed',
+        top: 0,
+        height: '90px',
         gridAutoFlow: 'column',
-        gridTemplateColumns: 'auto 70px',
-        background: 'orange'
+        justifyContent: 'space-between'
       },
       heading: {
-        justifySelf: 'center'
+        margin: 'auto 0'
+      },
+      switch: {
+        margin: 'auto 0'
       }
     }
   }

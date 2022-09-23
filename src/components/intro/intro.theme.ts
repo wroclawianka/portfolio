@@ -22,8 +22,8 @@ export const introTheme = {
         maxWidth: '90%'
       },
       picture: {
-        minWidth: "100px",
-        margin: 'auto',
+        minWidth: '100px',
+        margin: 'auto'
       }
     }
   }

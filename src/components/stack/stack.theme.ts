@@ -4,7 +4,7 @@ export const stackTheme = {
     baseStyle: {
       root: {
         background: 'orange',
-        minHeight: '100vh',
+        minHeight: '100vh'
       }
     }
   }
