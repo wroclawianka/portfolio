@@ -2,7 +2,10 @@ export const projectsTheme = {
   projects: {
     parts: ['root'],
     baseStyle: {
-      root: {}
+      root: {
+        background: 'green',
+        minHeight: '100vh',
+      }
     }
   }
 };

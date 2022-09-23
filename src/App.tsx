@@ -1,15 +1,17 @@
+import { ChakraProvider } from '@chakra-ui/react';
 import './App.css';
-import { Footer, Header, Intro, Projects, Stack } from './components';
+import { theme } from './application.theme';
+import { Intro, Projects, Stack } from './components';
 
 function App() {
   return (
-    <>
-      <Header />
-      <Intro />
-      <Projects />
-      <Stack />
-      <Footer />
-    </>
+    <ChakraProvider theme={theme}>
+        {/* <Header /> */}
+        <Intro />
+        <Projects />
+        <Stack />
+        {/* <Footer /> */}
+    </ChakraProvider>
   );
 }
 
