@@ -1,7 +1,16 @@
 import './App.css';
+import { Footer, Header, Intro, Projects, Stack } from './components';
 
 function App() {
-  return <>Empty app</>;
+  return (
+    <>
+      <Header />
+      <Intro />
+      <Projects />
+      <Stack />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
