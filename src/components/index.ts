@@ -5,3 +5,4 @@ export * from './projects';
 export * from './stack';
 export * from './layout';
 export * from './icons';
+export * from './window';

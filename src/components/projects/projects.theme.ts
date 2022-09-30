@@ -1,11 +1,28 @@
 export const projectsTheme = {
   projects: {
-    parts: ['root'],
+    parts: ['root', 'first', 'second', 'third'],
     baseStyle: {
       root: {
-        background: 'green',
-        minHeight: '100vh'
+        background: 'teal.200',
+        minHeight: '100vh',
+        padding: "80px 200px",
+        gap: '20px',
+        gridTemplateAreas: `
+        " . . . first first first ."
+        "second second second first first first ."
+        "second second second . third third third"
+        " . . . . third third third"
+        `
+      },
+      first: {
+        gridArea: 'first',
+      },
+      second: {
+        gridArea: 'second',
+      },
+      third: {
+        gridArea: 'third',
       }
-    }
+    },
   }
 };

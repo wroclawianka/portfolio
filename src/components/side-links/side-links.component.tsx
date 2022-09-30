@@ -12,7 +12,7 @@ export const SideLinks = () => {
 
   return (
     <Grid sx={style.root}>
-      {socialLinks.map(({ href, label, children: icon }) => (
+      {/* {socialLinks.map(({ href, label, children: icon }) => (
         <Link href={href} about="blank" key={label}>
           <IconButton
             size="lg"
@@ -21,7 +21,7 @@ export const SideLinks = () => {
             icon={icon}
           />
         </Link>
-      ))}
+      ))} */}
       <Box sx={style.line} />
     </Grid>
   );

@@ -5,7 +5,8 @@ import {
   introTheme,
   layoutTheme,
   projectsTheme,
-  stackTheme
+  stackTheme,
+  windowTheme
 } from './components';
 import { sideLinksTheme } from './components/side-links';
 
@@ -17,7 +18,8 @@ export const theme = extendTheme({
     ...projectsTheme,
     ...stackTheme,
     ...layoutTheme,
-    ...sideLinksTheme
+    ...sideLinksTheme,
+    ...windowTheme
   },
   breakpoints: {
     sm: '320px',
