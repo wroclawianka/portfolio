@@ -18,6 +18,7 @@ export const SideLinks = () => {
             size="lg"
             variant="ghost"
             aria-label={label}
+            colorScheme="teal"
             icon={icon}
           />
         </Link>
