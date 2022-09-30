@@ -1,11 +1,11 @@
 import {
   Box,
   Grid,
-  IconButton,
-  Link,
+  // IconButton,
+  // Link,
   useMultiStyleConfig
 } from '@chakra-ui/react';
-import { socialLinks } from '../../constants';
+// import { socialLinks } from '../../constants';
 
 export const SideLinks = () => {
   const style = useMultiStyleConfig('sideLinks', {});

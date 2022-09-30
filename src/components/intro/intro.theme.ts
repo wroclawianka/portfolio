@@ -21,12 +21,12 @@ export const introTheme = {
       },
       description: {
         mt: '4',
-        maxWidth: '90%',
+        maxWidth: '90%'
       },
       picture: {
         minWidth: '100px',
         margin: 'auto'
-      },
+      }
     }
   }
 };

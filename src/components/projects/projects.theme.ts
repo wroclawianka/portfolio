@@ -5,7 +5,7 @@ export const projectsTheme = {
       root: {
         background: 'teal.200',
         minHeight: '100vh',
-        padding: "80px 200px",
+        padding: '80px 200px',
         gap: '20px',
         gridTemplateAreas: `
         " . . . first first first ."
@@ -15,14 +15,14 @@ export const projectsTheme = {
         `
       },
       first: {
-        gridArea: 'first',
+        gridArea: 'first'
       },
       second: {
-        gridArea: 'second',
+        gridArea: 'second'
       },
       third: {
-        gridArea: 'third',
+        gridArea: 'third'
       }
-    },
+    }
   }
 };
