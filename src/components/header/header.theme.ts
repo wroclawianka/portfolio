@@ -10,14 +10,15 @@ export const headerTheme = {
         top: 0,
         height: '90px',
         gridAutoFlow: 'column',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
       },
       heading: {
-        margin: 'auto 0'
+        margin: 'auto 0',
+        fontFamily: '"JetBrains Mono", monospace'
       },
-      switch: {
-        margin: 'auto 0'
-      }
+    switch: {
+      margin: 'auto 0'
     }
   }
+}
 };
