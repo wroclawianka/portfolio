@@ -3,9 +3,11 @@ import {
   footerTheme,
   headerTheme,
   introTheme,
+  layoutTheme,
   projectsTheme,
   stackTheme
 } from './components';
+import { sideLinksTheme } from './components/side-links';
 
 export const theme = extendTheme({
   components: {
@@ -13,7 +15,9 @@ export const theme = extendTheme({
     ...headerTheme,
     ...introTheme,
     ...projectsTheme,
-    ...stackTheme
+    ...stackTheme,
+    ...layoutTheme,
+    ...sideLinksTheme
   },
   breakpoints: {
     sm: '320px',

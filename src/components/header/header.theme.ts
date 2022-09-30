@@ -3,7 +3,7 @@ export const headerTheme = {
     parts: ['root', 'heading', 'highlight'],
     baseStyle: {
       root: {
-        p: '0 30px 10px 30px',
+        p: '0 30px 10px 45px',
         background: 'white',
         width: '100%',
         position: 'fixed',
