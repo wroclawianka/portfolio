@@ -1,5 +1,5 @@
-export const projectsTheme = {
-  projects: {
+export const aboutMeTheme = {
+  aboutMe: {
     parts: ['root', 'first', 'second', 'third'],
     baseStyle: {
       root: {

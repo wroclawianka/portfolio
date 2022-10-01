@@ -1,8 +1,8 @@
 import { Grid, GridItem, useMultiStyleConfig } from '@chakra-ui/react';
 import { Window } from '../window';
 
-export const Projects = () => {
-  const style = useMultiStyleConfig('projects', {});
+export const AboutMe = () => {
+  const style = useMultiStyleConfig('aboutMe', {});
 
   return (
     <Grid sx={style.root}>

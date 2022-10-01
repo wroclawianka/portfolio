@@ -1,10 +1,10 @@
 import { extendTheme } from '@chakra-ui/react';
 import {
+  aboutMeTheme,
   footerTheme,
   headerTheme,
   introTheme,
   layoutTheme,
-  projectsTheme,
   stackTheme,
   windowTheme
 } from './components';
@@ -15,7 +15,7 @@ export const theme = extendTheme({
     ...footerTheme,
     ...headerTheme,
     ...introTheme,
-    ...projectsTheme,
+    ...aboutMeTheme,
     ...stackTheme,
     ...layoutTheme,
     ...sideLinksTheme,
