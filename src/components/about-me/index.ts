@@ -1,2 +1,2 @@
 export * from './about-me.component';
-export * from './about -me.theme';
+export * from './about-me.theme';

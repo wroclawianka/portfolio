@@ -5,6 +5,7 @@ import {
   headerTheme,
   introTheme,
   layoutTheme,
+  projectsTheme,
   stackTheme,
   windowTheme
 } from './components';
@@ -19,7 +20,8 @@ export const theme = extendTheme({
     ...stackTheme,
     ...layoutTheme,
     ...sideLinksTheme,
-    ...windowTheme
+    ...windowTheme,
+    ...projectsTheme,
   },
   breakpoints: {
     sm: '320px',

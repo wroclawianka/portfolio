@@ -2,8 +2,15 @@ import { project } from "../types";
 
 export const projects: project[] = [
     {
+        title: "Portfolio #3",
+        webpage: "https://wroclawianka.github.io/portfolio-ts/",
+        repo: "https://github.com/wroclawianka/portfolio-ts",
+        stack: ['REACT', 'REDUX', 'TS', 'HTML/CSS'],
+        label: 'React & Redux',
+        year: '2022',
+    },
+    {
         title: "Vote for me",
-        img: 'assets/scott-graham-OQMZwNd3ThU-unsplash.jpg',
         webpage: "https://wroclawianka.github.io/vote-for-me/",
         repo: "https://github.com/wroclawianka/vote-for-me",
         stack: ['REACT', 'REDUX', 'TS', 'HTML/CSS'],
@@ -12,7 +19,6 @@ export const projects: project[] = [
     },
     {
         title: "Groceries List",
-        img: 'assets/charisse-kenion-Ycg-qnn7XEM-unsplash.jpg',
         repo: "https://github.com/wroclawianka/groceries-app",
         yt: 'https://youtu.be/r-y8D6FmHk0',
         stack: ['REACT', 'REDUX', 'NODEJS', 'MONGO', 'MATERIAL UI', 'HTML/CSS'],
@@ -20,7 +26,6 @@ export const projects: project[] = [
     },
     {
         title: "Crypto Tracker",
-        img: 'assets/andre-francois-mckenzie-vh7U_Z75L3U-unsplash.jpg',
         webpage: 'https://wroclawianka.github.io/crypto-tracker',
         repo: "https://github.com/wroclawianka/crypto-tracker",
         stack: ['ANGULAR', 'NGRX', 'MATERIAL UI', 'HTML/CSS'],
@@ -29,7 +34,6 @@ export const projects: project[] = [
     },
     {
         title: "Phonebook",
-        img: 'assets/rahul-chakraborty-xsGxhtAsfSA-unsplash.jpg',
         repo: "https://github.com/wroclawianka/phonebook",
         yt: 'https://youtu.be/UWDnyAftJW4',
         stack: ['REACT', 'JS', 'MONGO', 'NODEJS', 'MATERIAL UI', 'HTML/CSS'],
@@ -38,7 +42,6 @@ export const projects: project[] = [
     },
     {
         title: "Sorting Algorithms",
-        img: 'assets/ferdinand-stohr-rzA7ZuI8M5o-unsplash.jpg',
         webpage: 'https://sorting-algorithms-app.netlify.com/',
         repo: 'https://github.com/wroclawianka/sorting',
         stack: ['REACT', 'TS', 'HTML/CSS', 'BOOTSTRAP'],
@@ -46,7 +49,6 @@ export const projects: project[] = [
     },
     {
         title: "Portfolio #2",
-        img: 'assets/crew-4Hg8LH9Hoxc-unsplash.jpg',
         webpage: "https://wroclawianka.github.io/portfolio",
         repo: "https://github.com/wroclawianka/portfolio",
         stack: ['REACT', 'JS', 'HTML/CSS'],
@@ -54,7 +56,6 @@ export const projects: project[] = [
     },
     {
         title: "Panowie z warsztatu",
-        img: 'assets/thibaut-nagorny-ozTOWTr_i74-unsplash.jpg',
         webpage: 'https://wroclawianka.github.io/workshop-modern/',
         repo: 'https://github.com/wroclawianka/workshop-modern',
         stack: ['JQUERY', 'JS', 'HTML/CSS'],
@@ -62,7 +63,6 @@ export const projects: project[] = [
     },
     {
         title: "Loan Ratings App",
-        img: 'assets/sabine-peters-4IqiPGAuTVE-unsplash.jpg',
         webpage: 'https://wroclawianka.github.io/loan-ratings-app/',
         repo: 'https://github.com/wroclawianka/loan-ratings-app',
         stack: ['ANGULAR', 'TS', 'HTML/CSS'],
@@ -70,7 +70,6 @@ export const projects: project[] = [
     },
     {
         title: "Prague with my eyes",
-        img: 'assets/wojtek-witkowski-1fpyA_z2woY-unsplash.jpg',
         webpage: 'https://praha-blog.netlify.com/',
         repo: 'https://github.com/wroclawianka/BlogApi/tree/master/Blog2.0/blog2.0',
         stack: ['ANGULAR', 'TS', 'HTML/CSS'],
@@ -78,7 +77,6 @@ export const projects: project[] = [
     },
     {
         title: "Book List",
-        img: 'assets/lou-levit-XiCZpdoX4lE-unsplash.jpg',
         webpage: 'https://book-list-dorota-zelga.netlify.com/',
         repo: 'https://github.com/wroclawianka/book-list-assignment',
         stack: ['REACT', 'JS', 'HTML/CSS', 'BOOTSTRAP'],
@@ -86,7 +84,6 @@ export const projects: project[] = [
     },
     {
         title: "Graphical Dashboard",
-        img: 'assets/carlos-muza-hpjSkU2UYSU-unsplash.jpg',
         webpage: 'https://graphical-dashboard.netlify.com/',
         repo: 'https://github.com/wroclawianka/graphical-dashboard',
         stack: ['JS', 'HTML/CSS'],
@@ -94,7 +91,6 @@ export const projects: project[] = [
     },
     {
         title: "Ordering App",
-        img: 'assets/david-clarke-wQSe8GKVKoE-unsplash.jpg',
         repo: 'https://github.com/wroclawianka/ordering-assignment',
         yt: 'https://youtu.be/-aCDjMuvmGE',
         stack: ['REACT', 'JS', 'HTML/CSS'],
@@ -102,7 +98,6 @@ export const projects: project[] = [
     },
     {
         title: "Portfolio #1",
-        img: 'assets/temple-cerulean-tP8ZwlCF8og-unsplash.jpg',
         webpage: "https://wroclawianka.github.io/portfolio-2018/",
         repo: "https://github.com/wroclawianka/portfolio-2018",
         stack: ['JQUERY', 'JS', 'HTML/CSS'],
@@ -110,7 +105,6 @@ export const projects: project[] = [
     },
     {
         title: "Binary Calculator",
-        img: 'assets/agence-producteurs-locaux-damien-kuhn-d-pPg9pnZRY-unsplash.jpg',
         webpage: 'https://wroclawianka.github.io/binary-calculator/',
         repo: 'https://github.com/wroclawianka/binary-calculator',
         stack: ['JQUERY', 'JS', 'BOOTSTRAP', 'HTML/CSS'],
@@ -118,7 +112,6 @@ export const projects: project[] = [
     },
     {
         title: "Workshop Website",
-        img: 'assets/maksym-kaharlytskyi-ERt5AiGT7Xg-unsplash.jpg',
         webpage: 'https://wroclawianka.github.io/car-service-webpage/',
         repo: 'https://github.com/wroclawianka/car-service-webpage',
         stack: ['JQUERY', 'JS', 'HTML/CSS'],

@@ -3,7 +3,7 @@ export const stackTheme = {
     parts: ['root'],
     baseStyle: {
       root: {
-        // background: 'orange',
+        background: 'orange',
         minHeight: '100vh'
       }
     }
