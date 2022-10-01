@@ -5,7 +5,7 @@ export const aboutMeTheme = {
       root: {
         background: 'teal.200',
         minHeight: '100vh',
-        padding: '80px 200px',
+        padding: '80px 280px',
         gap: '20px',
         gridTemplateAreas: `
         " . . . first first first ."

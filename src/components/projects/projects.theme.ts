@@ -3,14 +3,14 @@ export const projectsTheme = {
     parts: ['root', 'project'],
     baseStyle: {
       root: {
-        p: '50px 300px',
+        p: '50px 350px',
         minHeight: '100vh',
         // gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, max(60px, 100%/4)), 1fr))",
         // gap: '3',
         fontFamily: '"Nunito", sans-serif',
       },
       grid: {
-        gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
+        gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
         gap: '3',
       },
       flex: {
@@ -25,7 +25,7 @@ export const projectsTheme = {
       },
       project: {
         p: 3,
-        minHeight: '250px',
+        minHeight: '200px',
         // minWidth: '100px',
         h: '100%',
         background: 'teal.300'
