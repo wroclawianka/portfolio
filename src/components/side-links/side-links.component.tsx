@@ -1,7 +1,6 @@
 import {
   Box,
   Grid,
-  Icon,
   IconButton,
   Link,
   useMultiStyleConfig
