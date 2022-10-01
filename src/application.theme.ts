@@ -21,7 +21,7 @@ export const theme = extendTheme({
     ...layoutTheme,
     ...sideLinksTheme,
     ...windowTheme,
-    ...projectsTheme,
+    ...projectsTheme
   },
   breakpoints: {
     sm: '320px',

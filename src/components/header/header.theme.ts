@@ -11,7 +11,7 @@ export const headerTheme = {
         height: '90px',
         gridAutoFlow: 'column',
         justifyContent: 'space-between',
-        zIndex: '1',
+        zIndex: '1'
       },
       heading: {
         margin: 'auto 0',

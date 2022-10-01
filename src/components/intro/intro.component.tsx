@@ -20,8 +20,8 @@ export const Intro = () => {
             Front-end developer
           </Text>
           <Text fontSize="md" sx={style.description}>
-            I am spcialized in web applications. Currently building 
-            with React, Redux and TypeScript stack. 
+            I am spcialized in web applications. Currently building with React,
+            Redux and TypeScript stack.
           </Text>
         </Box>
         <Box sx={style.picture}>

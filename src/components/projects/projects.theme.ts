@@ -11,18 +11,18 @@ export const projectsTheme = {
         background: 'teal.200'
       },
       grid: {
-        gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
-        gap: 4,
+        gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
+        gap: 4
       },
       flex: {
-        justifyContent: "space-between",
-        pb: 3,
+        justifyContent: 'space-between',
+        pb: 3
       },
       buttons: {
         // p: 2,
         gap: 2,
         gridAutoFlow: 'column',
-        justifyContent: 'end',
+        justifyContent: 'end'
       },
       project: {
         p: 5,
@@ -32,9 +32,8 @@ export const projectsTheme = {
         background: 'white',
         // border: '1px solid',
         // borderColor: 'teal.500',
-        borderRadius: '10px',
-      },
-
+        borderRadius: '10px'
+      }
     }
   }
 };

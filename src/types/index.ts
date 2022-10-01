@@ -1,2 +1,2 @@
 export * from './link.type';
-export * from './project.type'
+export * from './project.type';

@@ -3,7 +3,7 @@ export const footerTheme = {
     parts: ['root'],
     baseStyle: {
       root: {
-        minHeight: '100vh',
+        minHeight: '100vh'
       }
     }
   }
