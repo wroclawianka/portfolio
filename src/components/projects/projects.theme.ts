@@ -9,6 +9,10 @@ export const projectsTheme = {
         gap: '3',
         fontFamily: '"Nunito", sans-serif',
       },
+      flex: {
+        justifyContent: "space-between",
+        pb: 3,
+      },
       buttons: {
         // p: 2,
         gap: 2,
