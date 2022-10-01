@@ -3,15 +3,16 @@ export const projectsTheme = {
     parts: ['root', 'project'],
     baseStyle: {
       root: {
-        p: '50px 350px',
+        p: '50px 300px',
         minHeight: '100vh',
         // gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, max(60px, 100%/4)), 1fr))",
         // gap: '3',
         fontFamily: '"Nunito", sans-serif',
+        background: 'teal.200'
       },
       grid: {
-        gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-        gap: '3',
+        gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
+        gap: 4,
       },
       flex: {
         justifyContent: "space-between",
@@ -24,12 +25,16 @@ export const projectsTheme = {
         justifyContent: 'end',
       },
       project: {
-        p: 3,
-        minHeight: '200px',
+        p: 5,
+        minHeight: '250px',
         // minWidth: '100px',
         h: '100%',
-        background: 'teal.300'
+        background: 'white',
+        // border: '1px solid',
+        // borderColor: 'teal.500',
+        borderRadius: '10px',
       },
+
     }
   }
 };

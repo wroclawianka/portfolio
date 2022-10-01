@@ -1,4 +1,5 @@
 import { FunctionComponent, PropsWithChildren } from 'react';
+import { Footer } from '../footer';
 import { Header } from '../header';
 import { SideLinks } from '../side-links';
 
