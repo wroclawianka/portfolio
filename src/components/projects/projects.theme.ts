@@ -3,11 +3,15 @@ export const projectsTheme = {
     parts: ['root', 'project'],
     baseStyle: {
       root: {
-        p: '50px 150px',
+        p: '50px 300px',
         minHeight: '100vh',
-        gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, max(100px, 100%/6)), 1fr))",
-        gap: '3',
+        // gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, max(60px, 100%/4)), 1fr))",
+        // gap: '3',
         fontFamily: '"Nunito", sans-serif',
+      },
+      grid: {
+        gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
+        gap: '3',
       },
       flex: {
         justifyContent: "space-between",
@@ -21,10 +25,9 @@ export const projectsTheme = {
       },
       project: {
         p: 3,
-        minHeight: '100px',
-        minWidth: '100px',
+        minHeight: '250px',
+        // minWidth: '100px',
         h: '100%',
-        w: '100%',
         background: 'teal.300'
       },
     }
