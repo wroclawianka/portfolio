@@ -4,7 +4,6 @@ import {
   footerTheme,
   headerTheme,
   introTheme,
-  layoutTheme,
   projectsTheme,
   stackTheme,
   windowTheme
@@ -18,7 +17,6 @@ export const theme = extendTheme({
     ...introTheme,
     ...aboutMeTheme,
     ...stackTheme,
-    ...layoutTheme,
     ...sideLinksTheme,
     ...windowTheme,
     ...projectsTheme
