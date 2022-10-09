@@ -21,6 +21,11 @@ i18n
         translation: {
           header: {
             title: 'dorota.zelga'
+          },
+          projects: {
+            repositorium: "Repositorium",
+            website: "Website",
+            see_more: "See more",
           }
         }
       }
