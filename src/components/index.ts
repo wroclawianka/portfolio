@@ -6,3 +6,4 @@ export * from './stack';
 export * from './layout';
 export * from './window';
 export * from './projects';
+export * from './icons';
