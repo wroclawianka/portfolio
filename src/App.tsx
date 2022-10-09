@@ -1,7 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import './App.css';
 import { theme } from './application.theme';
-import { AboutMe, Intro, Layout, Projects, Stack } from './components';
+import { Intro, Layout, Projects } from './components';
 
 function App() {
   return (
@@ -9,8 +9,8 @@ function App() {
       <Layout>
         <Intro />
         {/* <AboutMe /> */}
-        {/* <Stack /> */}
         <Projects />
+        {/* <Stack /> */}
       </Layout>
     </ChakraProvider>
   );

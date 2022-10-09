@@ -23,9 +23,9 @@ i18n
             title: 'dorota.zelga'
           },
           projects: {
-            repositorium: "Repositorium",
-            website: "Website",
-            see_more: "See more",
+            repositorium: 'Repositorium',
+            website: 'Website',
+            see_more: 'See more'
           }
         }
       }

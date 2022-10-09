@@ -31,7 +31,8 @@ export const projects: project[] = [
     repo: 'https://github.com/wroclawianka/groceries-app',
     yt: 'https://youtu.be/r-y8D6FmHk0',
     stack: ['React', 'Redux', 'NodeJS', 'MongoDB'],
-    description: 'Manage shopping list of a company. Create a list, mark and bought and specify the cost',
+    description:
+      'Manage shopping list of a company. Create a list, mark and bought and specify the cost',
     year: '2020'
   },
   {
@@ -39,7 +40,8 @@ export const projects: project[] = [
     // webpage: 'https://wroclawianka.github.io/crypto-tracker',
     repo: 'https://github.com/wroclawianka/crypto-tracker',
     stack: ['Angular', 'ngrx', 'Material UI'],
-    description: 'Track prices of the cryptocurrencies. Search them, see they prices and add to favorites',
+    description:
+      'Track prices of the cryptocurrencies. Search them, see they prices and add to favorites',
     year: '2020'
   },
   {
@@ -55,7 +57,8 @@ export const projects: project[] = [
     title: 'Sorting Algorithms',
     webpage: 'https://sorting-algorithms-app.netlify.com/',
     repo: 'https://github.com/wroclawianka/sorting',
-    description: 'Visualization of sorting algorithms: bubble, insertion and selection',
+    description:
+      'Visualization of sorting algorithms: bubble, insertion and selection',
     stack: ['React', 'TypeScript', 'Bootstrap', 'Pose'],
     year: '2019'
   },
@@ -96,7 +99,8 @@ export const projects: project[] = [
     title: 'Bookshelf',
     webpage: 'https://book-list-dorota-zelga.netlify.com/',
     repo: 'https://github.com/wroclawianka/book-list-assignment',
-    description: 'Check list of your books, see book details, add a new position',
+    description:
+      'Check list of your books, see book details, add a new position',
     stack: ['React', 'JavaScript', 'Bootstrap'],
     year: '2018'
   },
@@ -112,7 +116,8 @@ export const projects: project[] = [
     title: 'Ordering App',
     repo: 'https://github.com/wroclawianka/ordering-assignment',
     yt: 'https://youtu.be/-aCDjMuvmGE',
-    description: 'Place an order for the construction tools, see suggestions of the additional products to add',
+    description:
+      'Place an order for the construction tools, see suggestions of the additional products to add',
     stack: ['React', 'JavaScript', 'CSS', 'HTML'],
     year: '2018'
   },
