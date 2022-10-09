@@ -3,20 +3,20 @@ export const windowTheme = {
     parts: ['root', 'topBar'],
     baseStyle: {
       root: {
+        height: '100%',
         background: 'white',
         border: '2px solid black',
         borderRadius: '15px',
-        height: '100%',
         gridTemplateRows: '30px auto'
       },
       topBar: {
-        pl: '3',
-        borderBottom: '2px solid black',
+        pl: 3,
         display: 'grid',
+        gap: 2,
         gridAutoFlow: 'column',
-        gap: '2',
         justifyContent: 'start',
-        alignItems: 'center'
+        alignItems: 'center',
+        borderBottom: '2px solid black'
       }
     }
   }
