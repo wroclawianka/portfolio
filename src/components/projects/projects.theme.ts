@@ -13,6 +13,10 @@ export const projectsTheme = {
         gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
         gap: 4
       },
+      projectHover: {
+        marginTop: '0px',
+        marginBottom: '10px',
+      },
       projectBox: {
         p: 5,
         h: '100%',
@@ -20,7 +24,9 @@ export const projectsTheme = {
         borderRadius: '10px',
         background: 'white',
         flexDirection: 'column',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        marginTop: '10px',
+        transitionDuration: "0.5s",
       },
       title: {
         alignSelf: 'center',

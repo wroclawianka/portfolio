@@ -8,7 +8,7 @@ function App() {
     <ChakraProvider theme={theme}>
       <Layout>
         <Intro />
-        <AboutMe />
+        {/* <AboutMe /> */}
         {/* <Stack /> */}
         <Projects />
       </Layout>

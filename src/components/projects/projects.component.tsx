@@ -32,7 +32,7 @@ export const Projects = () => {
       <Grid sx={style.projectsGrid}>
         {list.map(({ title, webpage, repo, description, stack }) => (
           <GridItem key={title}>
-            <Flex sx={style.projectBox}>
+            <Flex sx={style.projectBox} _hover={style.projectHover}>
               <Box>
                 <Grid sx={style.links}>
                   <Link href={repo}>
