@@ -34,34 +34,32 @@ export const Projects = () => {
           <GridItem key={title}>
             <Flex sx={style.projectBox}>
               <Box>
-                <Flex sx={style.titleFlex}>
-                  <Text sx={style.title}>{title}</Text>
-                  <Grid sx={style.links}>
-                    <Link href={repo}>
+                <Grid sx={style.links}>
+                  <Link href={repo}>
+                    <IconButton
+                      size="md"
+                      variant="ghost"
+                      aria-label={t('projects.repositorium')}
+                      colorScheme="teal"
+                      icon={<GitHubIcon />}
+                    />
+                  </Link>
+                  {webpage ? (
+                    <Link href={webpage}>
                       <IconButton
                         size="md"
                         variant="ghost"
-                        aria-label={t('projects.repositorium')}
+                        aria-label={t('projects.website')}
                         colorScheme="teal"
-                        icon={<GitHubIcon />}
+                        icon={<ExternalLinkIcon />}
                       />
                     </Link>
-                    {webpage ? (
-                      <Link href={webpage}>
-                        <IconButton
-                          size="md"
-                          variant="ghost"
-                          aria-label={t('projects.website')}
-                          colorScheme="teal"
-                          icon={<ExternalLinkIcon />}
-                        />
-                      </Link>
-                    ) : (
-                      <></>
-                    )}
-                  </Grid>
-                </Flex>
-                <Text fontSize="lg">{description}</Text>
+                  ) : (
+                    <></>
+                  )}
+                </Grid>
+                <Text sx={style.title}>{title}</Text>
+                <Text>{description}</Text>
               </Box>
               <Box>
                 <Text sx={style.stackText}>

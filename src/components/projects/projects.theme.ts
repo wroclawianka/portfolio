@@ -1,12 +1,13 @@
 export const projectsTheme = {
   projects: {
-    parts: ['root', 'projectsGrid', 'projectBox', 'titleFlex', 'title', 'links', 'stackText', 'stackList'],
+    parts: ['root', 'projectsGrid', 'projectBox', 'title', 'links', 'stackText', 'stackList'],
     baseStyle: {
       root: {
         p: '50px 300px',
         minHeight: '100vh',
         fontFamily: '"Nunito", sans-serif',
-        background: 'teal.200'
+        background: 'teal.200',
+        fontSize: 'md',
       },
       projectsGrid: {
         gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
@@ -21,14 +22,11 @@ export const projectsTheme = {
         flexDirection: 'column',
         justifyContent: 'space-between'
       },
-      titleFlex: {
-        justifyContent: 'space-between',
-        pb: 3
-      },
       title: {
         alignSelf: 'center',
         fontWeight: 'bold',
-        fontSize: 'lg'
+        fontSize: 'lg',
+        pb: 2,
       },
       links: {
         gap: 2,
@@ -37,11 +35,13 @@ export const projectsTheme = {
       },
       stackText: {
         pt: 4,
-        fontSize: 'md'
+        fontSize: 'sm',
+        whiteSpace: 'nowrap',
       },
       stackList: {
         display: 'flex',
-        gap: 3
+        gap: 3,
+        color: 'grey'
       }
     }
   }
