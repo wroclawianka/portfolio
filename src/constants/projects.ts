@@ -1,148 +1,139 @@
 import { project } from '../types';
+import i18n from './../i18n';
 
 export const projects: project[] = [
   {
-    title: 'Portfolio 2022',
+    title: i18n.t('project.porfolio_2022.title'),
     webpage: 'https://wroclawianka.github.io/portfolio-ts/',
     repo: 'https://github.com/wroclawianka/portfolio-ts',
     stack: ['React', 'Redux', 'TypeScript', 'Chakra UI'],
-    description: 'Personal portfolio webpage you are currently visiting :) ',
-    year: '2022'
+    description: i18n.t('project.porfolio_2022.description'),
+    year: 2022
   },
   {
-    title: 'Vote for me',
+    title: i18n.t('project.vote_for_me.title'),
     webpage: 'https://wroclawianka.github.io/vote-for-me/',
     repo: 'https://github.com/wroclawianka/vote-for-me',
     stack: ['React', 'Redux', 'TypeScript', 'Chart.js'],
-    description:
-      'Create a survey, submit it, and see the results with the graphs',
-    year: '2022'
+    description: i18n.t('project.vote_for_me.description'),
+    year: 2022
   },
   {
-    title: 'Dynamic Table',
+    title: i18n.t('project.dynamic_table.title'),
     repo: 'https://github.com/wroclawianka/dynamic-table',
     stack: ['React', 'React Query', 'TypeScript', 'Ant'],
-    description:
-      'Update the content of the table and change its properties like columns and types',
-    year: '2022'
+    description: i18n.t('project.dynamic_table.description'),
+    year: 2022
   },
   {
-    title: 'Groceries List',
+    title: i18n.t('project.groceries_list.title'),
     repo: 'https://github.com/wroclawianka/groceries-app',
     yt: 'https://youtu.be/r-y8D6FmHk0',
     stack: ['React', 'Redux', 'NodeJS', 'MongoDB'],
-    description:
-      'Manage shopping list of a company. Create a list, mark and bought and specify the cost',
-    year: '2020'
+    description: i18n.t('project.groceries_list.description'),
+    year: 2020
   },
   {
-    title: 'Crypto Tracker',
-    // webpage: 'https://wroclawianka.github.io/crypto-tracker',
+    title: i18n.t('project.crypto_trcker.title'),
     repo: 'https://github.com/wroclawianka/crypto-tracker',
     stack: ['Angular', 'ngrx', 'Material UI'],
-    description:
-      'Track prices of the cryptocurrencies. Search them, see they prices and add to favorites',
-    year: '2020'
+    description: i18n.t('project.crypto_trcker.description'),
+    year: 2020
   },
   {
-    title: 'Phonebook',
+    title: i18n.t('project.phonebook.title'),
     repo: 'https://github.com/wroclawianka/phonebook',
     yt: 'https://youtu.be/UWDnyAftJW4',
     stack: ['React', 'MongoDB', 'NodeJS', 'axios'],
-    description:
-      'Full-stack phonebook application with possibility to add, read, edit and delete entries',
-    year: '2019'
+    description: i18n.t('project.phonebook.description'),
+    year: 2019
   },
   {
-    title: 'Sorting Algorithms',
+    title: i18n.t('project.sorting_algoritms.title'),
     webpage: 'https://sorting-algorithms-app.netlify.com/',
     repo: 'https://github.com/wroclawianka/sorting',
-    description:
-      'Visualization of sorting algorithms: bubble, insertion and selection',
+    description: i18n.t('project.sorting_algoritms.description'),
     stack: ['React', 'TypeScript', 'Bootstrap', 'Pose'],
-    year: '2019'
+    year: 2019
   },
   {
-    title: 'Portfolio 2019',
+    title: i18n.t('project.portfolio_2019.title'),
     webpage: 'https://wroclawianka.github.io/portfolio',
     repo: 'https://github.com/wroclawianka/portfolio',
     stack: ['React', 'JavaScript', 'CSS', 'HTML'],
-    description: 'Personal portfolio webpage',
-    year: '2019'
+    description: i18n.t('project.portfolio_2019.description'),
+    year: 2019
   },
   {
-    title: 'Workshop website',
+    title: i18n.t('project.workshop_2018_2.title'),
     webpage: 'https://wroclawianka.github.io/workshop-modern/',
     repo: 'https://github.com/wroclawianka/workshop-modern',
-    description: 'Website of a fictional car service company',
+    description: i18n.t('project.workshop_2018_2.description'),
     stack: ['jQuery', 'JavaScript', 'SCSS', 'HTML'],
-    year: '2018'
+    year: 2018
   },
   {
-    title: 'Loan Ratings App',
+    title: i18n.t('project.loan_rating_app.title'),
     webpage: 'https://wroclawianka.github.io/loan-ratings-app/',
     repo: 'https://github.com/wroclawianka/loan-ratings-app',
-    description:
-      'Calculate an average amount for loans available on marketplace of a given rating',
+    description: i18n.t('project.loan_rating_app.description'),
     stack: ['Angular', 'TypeScript', 'CSS', 'HTML'],
-    year: '2018'
+    year: 2018
   },
   {
-    title: 'Prague with my eyes',
+    title: i18n.t('project.blog_app.title'),
     webpage: 'https://praha-blog.netlify.com/',
     repo: 'https://github.com/wroclawianka/BlogApi/tree/master/Blog2.0/blog2.0',
     stack: ['Angular', 'TypeScript', 'CSS', 'HTML'],
-    description: 'Livestyle blog template with edit mode',
-    year: '2018'
+    description: i18n.t('project.blog_app.description'),
+    year: 2018
   },
   {
-    title: 'Bookshelf',
+    title: i18n.t('project.bookshelf.title'),
     webpage: 'https://book-list-dorota-zelga.netlify.com/',
     repo: 'https://github.com/wroclawianka/book-list-assignment',
-    description:
-      'Check list of your books, see book details, add a new position',
+    description: i18n.t('project.bookshelf.description'),
     stack: ['React', 'JavaScript', 'Bootstrap'],
-    year: '2018'
+    year: 2018
   },
   {
-    title: 'Graphical Dashboard',
+    title: i18n.t('project.graphical_dashboard.title'),
     webpage: 'https://graphical-dashboard.netlify.com/',
     repo: 'https://github.com/wroclawianka/graphical-dashboard',
-    description: 'Pixel perfect diagrams presenting company results',
+    description: i18n.t('project.graphical_dashboard.description'),
     stack: ['JavaScript', 'D3.js', 'Jasmine', 'CSS', 'HTML'],
-    year: '2018'
+    year: 2018
   },
   {
-    title: 'Ordering App',
+    title: i18n.t('project.ordering_app.title'),
     repo: 'https://github.com/wroclawianka/ordering-assignment',
     yt: 'https://youtu.be/-aCDjMuvmGE',
-    description:
-      'Place an order for the construction tools, see suggestions of the additional products to add',
+    description: i18n.t('project.ordering_app.description'),
     stack: ['React', 'JavaScript', 'CSS', 'HTML'],
-    year: '2018'
+    year: 2018
   },
   {
-    title: 'Portfolio 2018',
+    title: i18n.t('project.porfolio_2018.title'),
     webpage: 'https://wroclawianka.github.io/portfolio-2018/',
     repo: 'https://github.com/wroclawianka/portfolio-2018',
-    description: 'Personal portfolio webpage',
+    description: i18n.t('project.porfolio_2018.description'),
     stack: ['jQuery', 'JavaScript', 'CSS', 'HTML'],
-    year: '2018'
+    year: 2018
   },
   {
-    title: 'Binary Calculator',
+    title: i18n.t('project.binary_calculator.title'),
     webpage: 'https://wroclawianka.github.io/binary-calculator/',
     repo: 'https://github.com/wroclawianka/binary-calculator',
-    description: 'Binary calculator with validation of the fields',
+    description: i18n.t('project.binary_calculator.description'),
     stack: ['jQuery', 'JavaScript', 'Bootstrap'],
-    year: '2018'
+    year: 2018
   },
   {
-    title: 'Workshop Website',
+    title: i18n.t('project.workshop_2018_1.title'),
     webpage: 'https://wroclawianka.github.io/car-service-webpage/',
     repo: 'https://github.com/wroclawianka/car-service-webpage',
-    description: 'Website of a fictional car service company',
+    description: i18n.t('project.workshop_2018_1.description'),
     stack: ['jQuery', 'JavaScript', 'CSS', 'HTML'],
-    year: '2018'
+    year: 2018
   }
 ];

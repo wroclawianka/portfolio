@@ -11,7 +11,7 @@ import {
   Text,
   useMultiStyleConfig
 } from '@chakra-ui/react';
-import { projects } from '../../constants/projects';
+import { projects } from '../../constants';
 import { useState } from 'react';
 import { ExternalLinkIcon, GitHubIcon } from '../icons';
 import { useTranslation } from 'react-i18next';
@@ -39,7 +39,7 @@ export const Projects = () => {
                     <IconButton
                       size="md"
                       variant="ghost"
-                      aria-label={t('projects.repositorium')}
+                      aria-label={t('porfolio.repositorium')}
                       colorScheme="teal"
                       icon={<GitHubIcon />}
                     />
@@ -49,7 +49,7 @@ export const Projects = () => {
                       <IconButton
                         size="md"
                         variant="ghost"
-                        aria-label={t('projects.website')}
+                        aria-label={t('porfolio.website')}
                         colorScheme="teal"
                         icon={<ExternalLinkIcon />}
                       />
@@ -77,7 +77,7 @@ export const Projects = () => {
       <Flex mt={6} justifyContent="center">
         {projects.length !== list.length ? (
           <Button size="lg" colorScheme="teal" onClick={() => seeMore()}>
-            {t('projects.see_more')}
+            {t('porfolio.see_more')}
           </Button>
         ) : (
           <></>
