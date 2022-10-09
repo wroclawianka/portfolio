@@ -1,1 +1,1 @@
-export * from './socialLinks';
+export * from './projects';
