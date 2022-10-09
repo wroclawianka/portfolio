@@ -25,6 +25,7 @@ i18n
           intro: {
             hi: 'Hi, I am',
             dorota_zelga: 'Dorota Zelga',
+            front_end_developer: 'Front-end Developer',
             description:
               'I am spcialized in web applications. Currently building with React, Redux and TypeScript stack.'
           },

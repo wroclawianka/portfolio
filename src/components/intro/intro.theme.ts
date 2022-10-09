@@ -20,7 +20,7 @@ export const introTheme = {
         fontWeight: 'bold'
       },
       description: {
-        mt: '4',
+        mt: 4,
         maxWidth: '90%'
       },
       picture: {

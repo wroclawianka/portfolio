@@ -1,27 +1,24 @@
 import { Box, Grid, Image, Text, useMultiStyleConfig } from '@chakra-ui/react';
+import { useTranslation } from 'react-i18next';
 import avatar from './../../assets/avatar.jpeg';
 
 export const Intro = () => {
   const style = useMultiStyleConfig('intro', {});
-
-  // 1. animated Hi -> Hi, Hello, Ahoj, Salut, Cześć, Hola
-  // 2. animated letters on hover
-  // 3. style effect on hover of picture
+  const { t } = useTranslation();
 
   return (
     <Grid sx={style.root}>
       <Grid sx={style.content}>
         <Box>
-          <Text fontSize="md">Hi, I am </Text>
+          <Text fontSize="md">{t('intro.hi')} </Text>
           <Text fontSize="6xl" sx={style.subtitle}>
-            Dorota Zelga
+            {t('intro.dorota_zelga')}
           </Text>
           <Text fontSize="3xl" sx={style.subtitle}>
-            Front-end developer
+            {t('intro.front_end_developer')}
           </Text>
           <Text fontSize="md" sx={style.description}>
-            I am spcialized in web applications. Currently building with React,
-            Redux and TypeScript stack.
+            {t('intro.description')}
           </Text>
         </Box>
         <Box sx={style.picture}>
