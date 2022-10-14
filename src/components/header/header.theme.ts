@@ -15,7 +15,8 @@ export const headerTheme = {
       },
       heading: {
         margin: 'auto 0',
-        fontFamily: '"JetBrains Mono", monospace'
+        fontFamily: '"JetBrains Mono", monospace',
+        display: "flex"
       },
       switch: {
         margin: 'auto 0'
