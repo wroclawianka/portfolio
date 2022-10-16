@@ -22,8 +22,10 @@ export const theme = extendTheme({
     ...projectsTheme
   },
   breakpoints: {
-    sm: '320px',
-    md: '768px',
-    lg: '960px'
+    sm: '30em',
+    md: '48em',
+    lg: '62em',
+    xl: '80em',
+    '2xl': '96em',
   }
 });
