@@ -1,4 +1,4 @@
-import { Grid, Heading, useMultiStyleConfig } from '@chakra-ui/react';
+import { Grid, Text, useMultiStyleConfig } from '@chakra-ui/react';
 import { useState } from 'react';
 // import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -15,11 +15,11 @@ export const Header = () => {
       onMouseEnter={() => setAnimation(true)}
       onMouseLeave={() => setAnimation(false)}
     >
-      <Heading sx={style.heading}>
+      <Text fontSize="3xl" sx={style.heading}>
         {t('header.title')}
         {'>'}
         <CommandAnimation isStarted={isAnimationStarted} />
-      </Heading>
+      </Text>
       {/* <Switch sx={style.switch} size="lg" colorScheme="gray" /> */}
     </Grid>
   );
