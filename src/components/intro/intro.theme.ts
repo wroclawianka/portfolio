@@ -4,17 +4,36 @@ export const introTheme = {
     baseStyle: {
       root: {
         minHeight: '100vh',
-        fontFamily: '"JetBrains Mono", monospace'
+        fontFamily: '"JetBrains Mono", monospace',
       },
-      content: {
+      grid: {
         width: 'fit-content',
         minWidth: 'calc(55vw)',
         maxWidth: '800px',
         heigth: 'fit-content',
         margin: 'auto',
-        gridAutoFlow: 'row',
-        gridTemplateColumns: '7fr 3fr',
-        gap: 2
+        gap: 2,
+        gridAutoFlow: {
+          base: 'column',
+          md: 'row'
+        },
+        gridTemplateAreas:
+          '"content content" "picture picture"'
+        // gridTemplateColumns: {
+        //   md: '7fr 3fr',
+        // },
+        // gridTemplateRows: {
+        //   base: '1fr 1fr 1fr'
+        // }
+      },
+      content: {
+        gridArea: 'content',
+        textAlign: {
+          base: 'center'
+        },
+        maxWidth: {
+          base: '450px'
+        }
       },
       subtitle: {
         fontWeight: 'bold'
@@ -25,7 +44,15 @@ export const introTheme = {
       },
       picture: {
         minWidth: '100px',
-        margin: 'auto'
+        margin: 'auto',
+        gridArea: 'picture',
+        maxWidth: {
+          base: '150px',
+          md: 'inherit'
+        },
+        marginTop: {
+          base: 5
+        }
       }
     }
   }

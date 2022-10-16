@@ -8,8 +8,8 @@ export const Intro = () => {
 
   return (
     <Grid sx={style.root}>
-      <Grid sx={style.content}>
-        <Box>
+      <Grid sx={style.grid}>
+        <Box sx={style.content}>
           <Text fontSize="md">{t('intro.hi')} </Text>
           <Text fontSize="6xl" sx={style.subtitle}>
             {t('intro.dorota_zelga')}
