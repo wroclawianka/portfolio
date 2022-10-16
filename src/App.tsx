@@ -8,7 +8,7 @@ function App() {
       <Layout>
         <Intro />
         {/* <AboutMe /> */}
-        <Projects />
+        {/* <Projects /> */}
         {/* <Stack /> */}
       </Layout>
     </ChakraProvider>
