@@ -1,13 +1,13 @@
 import { extendTheme } from '@chakra-ui/react';
 import {
   aboutMeTheme,
+  animatedPictureTheme,
   footerTheme,
   headerTheme,
   introTheme,
   projectsTheme,
   stackTheme,
-  windowTheme,
-  animatedPictureTheme
+  windowTheme
 } from './components';
 import { sideLinksTheme } from './components/side-links';
 
