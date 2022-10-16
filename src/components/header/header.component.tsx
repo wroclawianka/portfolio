@@ -1,8 +1,14 @@
 import { Box, Grid, Text, useMultiStyleConfig } from '@chakra-ui/react';
 import { useState } from 'react';
-// import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { CommandAnimation } from './commandAnimation';
+import { AnimatedCommand } from '../animated-command';
+
+const titles = [
+  'software developer',
+  'npm i typescript',
+  'rm -rf',
+  'git push --force'
+];
 
 export const Header = () => {
   const style = useMultiStyleConfig('header', {});
@@ -19,7 +25,7 @@ export const Header = () => {
         {t('header.title')}
         <Box sx={style.animation}>
           {'>'}
-          <CommandAnimation isStarted={isAnimationStarted} />
+          <AnimatedCommand isStarted={isAnimationStarted} titles={titles} />
         </Box>
       </Text>
       {/* <Switch sx={style.switch} size="lg" colorScheme="gray" /> */}

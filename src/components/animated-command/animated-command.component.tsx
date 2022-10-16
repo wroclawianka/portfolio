@@ -1,20 +1,14 @@
 import { FunctionComponent, useEffect, useState } from 'react';
 import { Box } from '@chakra-ui/react';
 
-const titles = [
-  'software developer',
-  'npm i typescript',
-  'rm -rf',
-  'git push --force'
-];
-
 const duration = 120;
 
 type Props = {
   isStarted: boolean;
+  titles: string[];
 };
 
-export const CommandAnimation: FunctionComponent<Props> = ({ isStarted }) => {
+export const AnimatedCommand: FunctionComponent<Props> = ({ isStarted, titles }) => {
   const [text, setText] = useState<string>(''); // displayed text
   const [titleIndex, setTitleIndex] = useState<number>(0); // index of the selected title in titles
   const [charIndex, setCharIndex] = useState<number>(0); // index of the last character dusplayed in the title
