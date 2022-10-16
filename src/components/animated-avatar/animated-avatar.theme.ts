@@ -1,7 +1,7 @@
 import avatar from './../../assets/avatar.jpeg';
 
-export const animatedPictureTheme = {
-  animatedPicture: {
+export const animatedAvatarTheme = {
+  animatedAvatar: {
     parts: ['root'],
     baseStyle: {
       imageBorder: {

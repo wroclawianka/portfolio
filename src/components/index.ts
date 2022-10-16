@@ -7,4 +7,4 @@ export * from './layout';
 export * from './window';
 export * from './projects';
 export * from './icons';
-export * from './animated-picture';
+export * from './animated-avatar';

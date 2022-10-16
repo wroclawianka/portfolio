@@ -1,10 +1,9 @@
 import { FunctionComponent } from 'react';
 import { Box, ImageProps, useMultiStyleConfig } from '@chakra-ui/react';
 
-type Props = Pick<ImageProps, 'src' | 'alt'>;
-
-export const AnimatedPicture: FunctionComponent<Props> = ({ src, alt }) => {
-  const style = useMultiStyleConfig('animatedPicture');
+// inspired by https://codepen.io/iremlopsum/pen/gavjzv
+export const AnimatedAvatar: FunctionComponent = () => {
+  const style = useMultiStyleConfig('animatedAvatar');
 
   return (
     <Box sx={style.imageBorder} _after={style.imageBorderAfter}>
