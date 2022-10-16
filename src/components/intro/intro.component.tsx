@@ -1,6 +1,7 @@
 import { Box, Grid, Image, Text, useMultiStyleConfig } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
 import avatar from './../../assets/avatar.jpeg';
+import { AnimatedPicture } from '../animated-picture';
 
 export const Intro = () => {
   const style = useMultiStyleConfig('intro', {});
@@ -20,7 +21,7 @@ export const Intro = () => {
           </Text>
         </Box>
         <Box sx={style.picture}>
-          <Image src={avatar} borderRadius="full" alt="Avatar" />
+          <AnimatedPicture src={avatar} alt="Avatar" />
         </Box>
       </Grid>
     </Grid>

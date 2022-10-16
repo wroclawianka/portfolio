@@ -6,7 +6,8 @@ import {
   introTheme,
   projectsTheme,
   stackTheme,
-  windowTheme
+  windowTheme,
+  animatedPictureTheme
 } from './components';
 import { sideLinksTheme } from './components/side-links';
 
@@ -19,7 +20,8 @@ export const theme = extendTheme({
     ...stackTheme,
     ...sideLinksTheme,
     ...windowTheme,
-    ...projectsTheme
+    ...projectsTheme,
+    ...animatedPictureTheme
   },
   breakpoints: {
     sm: '30em',
