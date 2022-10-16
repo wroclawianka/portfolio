@@ -17,22 +17,24 @@ export const introTheme = {
           base: 'column',
           md: 'row'
         },
-        gridTemplateAreas:
-          '"content content" "picture picture"'
-        // gridTemplateColumns: {
-        //   md: '7fr 3fr',
-        // },
+        // gridTemplateAreas:
+          // '"content picture" "content picture"',
+        gridTemplateColumns: {
+          md: '7fr 3fr',
+        },
         // gridTemplateRows: {
         //   base: '1fr 1fr 1fr'
         // }
       },
       content: {
-        gridArea: 'content',
+        // gridArea: 'content',
         textAlign: {
-          base: 'center'
+          base: 'center',
+          md: 'inherit',
         },
         maxWidth: {
-          base: '450px'
+          base: '450px',
+          md: 'inherit',
         }
       },
       subtitle: {
@@ -45,13 +47,14 @@ export const introTheme = {
       picture: {
         minWidth: '100px',
         margin: 'auto',
-        gridArea: 'picture',
+        // gridArea: 'picture',
         maxWidth: {
           base: '150px',
           md: 'inherit'
         },
         marginTop: {
-          base: 5
+          base: 5, 
+          md: 'inherit',
         }
       }
     }
