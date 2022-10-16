@@ -1,4 +1,4 @@
-import { Grid, Text, Box, useMultiStyleConfig } from '@chakra-ui/react';
+import { Box, Grid, Text, useMultiStyleConfig } from '@chakra-ui/react';
 import { useState } from 'react';
 // import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';

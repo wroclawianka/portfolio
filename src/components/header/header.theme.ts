@@ -25,8 +25,8 @@ export const headerTheme = {
         display: 'flex',
         fontWeight: 'bold',
         fontSize: {
-          base: "2xl",
-          md: "3xl"
+          base: '2xl',
+          md: '3xl'
         }
       },
       animation: {

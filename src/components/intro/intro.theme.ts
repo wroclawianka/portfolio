@@ -4,7 +4,7 @@ export const introTheme = {
     baseStyle: {
       root: {
         minHeight: '100vh',
-        fontFamily: '"JetBrains Mono", monospace',
+        fontFamily: '"JetBrains Mono", monospace'
       },
       grid: {
         width: 'fit-content',
@@ -22,18 +22,18 @@ export const introTheme = {
           md: '"content picture" "content picture"'
         },
         gridTemplateColumns: {
-          md: '7fr 3fr',
-        },
+          md: '7fr 3fr'
+        }
       },
       content: {
         gridArea: 'content',
         textAlign: {
           base: 'center',
-          md: 'inherit',
+          md: 'inherit'
         },
         maxWidth: {
           base: '450px',
-          md: 'inherit',
+          md: 'inherit'
         },
         p: {
           base: '0px 10px',
@@ -42,15 +42,15 @@ export const introTheme = {
       },
       name: {
         fontSize: {
-          base: "5xl",
-          md: "6xl",
+          base: '5xl',
+          md: '6xl'
         },
         fontWeight: 'bold'
       },
       subtitle: {
         fontSize: {
-          base: "2xl",
-          md: "3xl",
+          base: '2xl',
+          md: '3xl'
         },
         fontWeight: 'bold'
       },
@@ -58,7 +58,7 @@ export const introTheme = {
         mt: 4,
         maxWidth: {
           base: 'inherit',
-          md: '90%',
+          md: '90%'
         }
       },
       picture: {
@@ -71,7 +71,7 @@ export const introTheme = {
         },
         marginTop: {
           base: 5,
-          md: 'inherit',
+          md: 'inherit'
         }
       }
     }
