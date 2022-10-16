@@ -56,8 +56,12 @@ export const CommandAnimation: FunctionComponent<Props> = ({ isStarted }) => {
   }, [titleIndex, isStarted]);
 
   return (
-    <Box color="grey" fontWeight="lighter">
-      {text}
-    </Box>
+    <>
+      {isStarted ? ( // show only on hover
+        <Box color="grey" fontWeight="lighter">
+          {text}
+        </Box>
+      ) : null}
+    </>
   );
 };
