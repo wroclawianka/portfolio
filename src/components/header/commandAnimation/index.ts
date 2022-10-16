@@ -1,1 +1,1 @@
-export * from './command-animation.component'
+export * from './command-animation.component';

@@ -7,7 +7,7 @@ import { CommandAnimation } from './commandAnimation';
 export const Header = () => {
   const style = useMultiStyleConfig('header', {});
   const { t } = useTranslation();
-  const [isAnimationStarted, setAnimation] = useState(false)
+  const [isAnimationStarted, setAnimation] = useState(false);
 
   return (
     <Grid
