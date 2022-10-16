@@ -11,7 +11,7 @@ export const Intro = () => {
       <Grid sx={style.grid}>
         <Box sx={style.content}>
           <Text fontSize="md">{t('intro.hi')} </Text>
-          <Text fontSize="6xl" sx={style.subtitle}>
+          <Text sx={style.name}>
             {t('intro.dorota_zelga')}
           </Text>
           <Text fontSize="3xl" sx={style.subtitle}>
