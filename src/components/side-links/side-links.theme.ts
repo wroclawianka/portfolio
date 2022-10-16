@@ -5,7 +5,10 @@ export const sideLinksTheme = {
       root: {
         position: 'fixed',
         bottom: '0',
-        left: '45px',
+        left: {
+          base: '12px',
+          md: '45px'
+        },
         gap: '6'
       },
       line: {
