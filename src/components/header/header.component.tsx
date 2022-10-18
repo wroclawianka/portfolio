@@ -1,7 +1,7 @@
 import { Box, Grid, Text, useMultiStyleConfig } from '@chakra-ui/react';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { AnimatedCommand } from '../commandAnimation';
+import { AnimatedCommand } from '../animated-command';
 
 const titles = [
   'software developer',
