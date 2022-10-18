@@ -11,7 +11,13 @@ export const projectsTheme = {
     ],
     baseStyle: {
       root: {
-        p: '50px 300px',
+        p: {
+          base: '10px 20px 10px 70px',
+          md: '10px 20px 10px 120px',
+          lg: '50px 20px 50px 120px',
+          xl: '50px 150px',
+          '2xl': '50px 300px'
+        },
         minHeight: '100vh',
         fontFamily: '"Nunito", sans-serif',
         background: 'teal.200',
@@ -26,7 +32,6 @@ export const projectsTheme = {
         marginBottom: '10px'
       },
       projectBox: {
-        p: 5,
         h: '100%',
         minHeight: '250px',
         borderRadius: '10px',
@@ -34,7 +39,8 @@ export const projectsTheme = {
         flexDirection: 'column',
         justifyContent: 'space-between',
         marginTop: '10px',
-        transitionDuration: '0.5s'
+        transitionDuration: '0.5s',
+        border: '2px solid black'
       },
       title: {
         alignSelf: 'center',
@@ -47,7 +53,11 @@ export const projectsTheme = {
         gridAutoFlow: 'column',
         justifyContent: 'end'
       },
+      content: {
+        p: '15px'
+      },
       stackText: {
+        p: '15px',
         pt: 4,
         fontSize: 'sm',
         whiteSpace: 'nowrap'

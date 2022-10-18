@@ -1,9 +1,4 @@
-import {
-  Box,
-  BoxProps,
-  Grid,
-  useMultiStyleConfig
-} from '@chakra-ui/react';
+import { Box, BoxProps, Grid, useMultiStyleConfig } from '@chakra-ui/react';
 import { FunctionComponent } from 'react';
 import { BlackDotIcon } from '../icons';
 

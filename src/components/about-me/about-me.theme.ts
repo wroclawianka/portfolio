@@ -22,7 +22,7 @@ export const aboutMeTheme = {
           "second second second first first first ."
           "second second second . third third third"
           " . . . . third third third"
-          `,
+          `
         },
         fontFamily: '"Nunito", sans-serif'
       },

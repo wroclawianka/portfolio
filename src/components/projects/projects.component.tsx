@@ -58,8 +58,10 @@ export const Projects = () => {
                     <></>
                   )}
                 </Grid>
-                <Text sx={style.title}>{title}</Text>
-                <Text>{description}</Text>
+                <Box sx={style.content}>
+                  <Text sx={style.title}>{title}</Text>
+                  <Text>{description}</Text>
+                </Box>
               </Box>
               <Box>
                 <Text sx={style.stackText}>
