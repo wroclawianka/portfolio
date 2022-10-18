@@ -2,15 +2,17 @@ import {
   Box,
   BoxProps,
   Grid,
-  Icon,
   useMultiStyleConfig
 } from '@chakra-ui/react';
 import { FunctionComponent } from 'react';
 import { BlackDotIcon } from '../icons';
 
-type Props = Pick<BoxProps, 'sx'>;
+type Props = {
+  text: string;
+  title?: string;
+} & Pick<BoxProps, 'sx'>;
 
-export const Window: FunctionComponent<Props> = ({ sx }) => {
+export const Window: FunctionComponent<Props> = ({ text = '', title, sx }) => {
   const style = useMultiStyleConfig('window', {});
 
   return (
@@ -20,7 +22,10 @@ export const Window: FunctionComponent<Props> = ({ sx }) => {
           <BlackDotIcon key={i} />
         ))}
       </Box>
-      <Box></Box>
+      <Box sx={style.content}>
+        {title ? <Box sx={style.title}>{title}</Box> : null}
+        <Box>{text}</Box>
+      </Box>
     </Grid>
   );
 };

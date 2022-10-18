@@ -5,14 +5,25 @@ export const aboutMeTheme = {
       root: {
         background: 'teal.200',
         minHeight: '100vh',
-        padding: '80px 280px',
+        padding: {
+          base: '30px 20px 30px 70px',
+          md: '80px 280px'
+        },
         gap: '20px',
-        gridTemplateAreas: `
-        " . . . first first first ."
-        "second second second first first first ."
-        "second second second . third third third"
-        " . . . . third third third"
-        `
+        gridTemplateAreas: {
+          base: `
+          "first"
+          "second"
+          "third"
+          `,
+          md: `
+          " . . . first first first ."
+          "second second second first first first ."
+          "second second second . third third third"
+          " . . . . third third third"
+          `
+        },
+        fontFamily: '"Nunito", sans-serif'
       },
       first: {
         gridArea: 'first'

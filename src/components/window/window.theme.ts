@@ -1,6 +1,6 @@
 export const windowTheme = {
   window: {
-    parts: ['root', 'topBar'],
+    parts: ['root', 'topBar', 'content'],
     baseStyle: {
       root: {
         height: '100%',
@@ -17,6 +17,14 @@ export const windowTheme = {
         justifyContent: 'start',
         alignItems: 'center',
         borderBottom: '2px solid black'
+      },
+      content: {
+        p: '5'
+      },
+      title: {
+        fontWeight: 'bold',
+        fontSize: '22px',
+        pb: '5px'
       }
     }
   }
