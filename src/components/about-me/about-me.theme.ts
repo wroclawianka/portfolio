@@ -7,7 +7,8 @@ export const aboutMeTheme = {
         minHeight: '100vh',
         padding: {
           base: '30px 20px 30px 70px',
-          md: '80px 280px'
+          md: '30px 20px 30px 120px',
+          xl: '80px 280px'
         },
         gap: '20px',
         gridTemplateAreas: {
@@ -16,12 +17,12 @@ export const aboutMeTheme = {
           "second"
           "third"
           `,
-          md: `
+          lg: `
           " . . . first first first ."
           "second second second first first first ."
           "second second second . third third third"
           " . . . . third third third"
-          `
+          `,
         },
         fontFamily: '"Nunito", sans-serif'
       },
