@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react';
-import { Box, ImageProps, useMultiStyleConfig } from '@chakra-ui/react';
+import { Box, useMultiStyleConfig } from '@chakra-ui/react';
 
 // inspired by https://codepen.io/iremlopsum/pen/gavjzv
 export const AnimatedAvatar: FunctionComponent = () => {

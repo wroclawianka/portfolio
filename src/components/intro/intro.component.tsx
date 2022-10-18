@@ -1,6 +1,5 @@
-import { Box, Grid, Image, Text, useMultiStyleConfig } from '@chakra-ui/react';
+import { Box, Grid, Text, useMultiStyleConfig } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
-import avatar from './../../assets/avatar.jpeg';
 import { AnimatedAvatar } from '../animated-avatar';
 
 export const Intro = () => {
