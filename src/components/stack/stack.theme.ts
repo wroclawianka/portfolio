@@ -3,8 +3,14 @@ export const stackTheme = {
     parts: ['root'],
     baseStyle: {
       root: {
-        // background: 'orange',
-        minHeight: '100vh'
+        gridAutoFlow: 'column',
+      },
+      icon: {
+        maxH: '80px',
+        filter: 'grayscale(0.8)'
+      },
+      iconHover: {
+        filter: 'grayscale(0)'
       }
     }
   }
