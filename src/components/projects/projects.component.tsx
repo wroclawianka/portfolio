@@ -28,66 +28,68 @@ export const Projects = () => {
   };
 
   return (
-    <Box sx={style.root}>
-      <Box>
+    <>
+      <Box sx={style.accent}>
         <Text fontSize={"5xl"} sx={style.title}>Projects</Text>
       </Box>
-      <Grid sx={style.projectsGrid}>
-        {list.map(({ title, webpage, repo, description, stack }) => (
-          <GridItem key={title}>
-            <Flex sx={style.projectBox} _hover={style.projectHover}>
-              <Box>
-                <Grid sx={style.links}>
-                  <Link href={repo}>
-                    <IconButton
-                      size="md"
-                      variant="ghost"
-                      aria-label={t('porfolio.repositorium')}
-                      colorScheme="teal"
-                      icon={<GitHubIcon />}
-                    />
-                  </Link>
-                  {webpage ? (
-                    <Link href={webpage}>
+      <Box sx={style.container}>
+        <Grid sx={style.projectsGrid}>
+          {list.map(({ title, webpage, repo, description, stack }) => (
+            <GridItem key={title}>
+              <Flex sx={style.projectBox} _hover={style.projectHover}>
+                <Box>
+                  <Grid sx={style.links}>
+                    <Link href={repo}>
                       <IconButton
                         size="md"
                         variant="ghost"
-                        aria-label={t('porfolio.website')}
+                        aria-label={t('porfolio.repositorium')}
                         colorScheme="teal"
-                        icon={<ExternalLinkIcon />}
+                        icon={<GitHubIcon />}
                       />
                     </Link>
-                  ) : (
-                    <></>
-                  )}
-                </Grid>
-                <Box sx={style.content}>
-                  <Text sx={style.projectName}>{title}</Text>
-                  <Text>{description}</Text>
+                    {webpage ? (
+                      <Link href={webpage}>
+                        <IconButton
+                          size="md"
+                          variant="ghost"
+                          aria-label={t('porfolio.website')}
+                          colorScheme="teal"
+                          icon={<ExternalLinkIcon />}
+                        />
+                      </Link>
+                    ) : (
+                      <></>
+                    )}
+                  </Grid>
+                  <Box sx={style.content}>
+                    <Text sx={style.projectName}>{title}</Text>
+                    <Text>{description}</Text>
+                  </Box>
                 </Box>
-              </Box>
-              <Box>
-                <Text sx={style.stackText}>
-                  <List sx={style.stackList}>
-                    {stack.map((el) => (
-                      <ListItem key={el}>{el}</ListItem>
-                    ))}
-                  </List>
-                </Text>
-              </Box>
-            </Flex>
-          </GridItem>
-        ))}
-      </Grid>
-      <Flex mt={6} justifyContent="center">
-        {projects.length !== list.length ? (
-          <Button size="lg" colorScheme="teal" onClick={() => seeMore()}>
-            {t('porfolio.see_more')}
-          </Button>
-        ) : (
-          <></>
-        )}
-      </Flex>
-    </Box>
+                <Box>
+                  <Text sx={style.stackText}>
+                    <List sx={style.stackList}>
+                      {stack.map((el) => (
+                        <ListItem key={el}>{el}</ListItem>
+                      ))}
+                    </List>
+                  </Text>
+                </Box>
+              </Flex>
+            </GridItem>
+          ))}
+        </Grid>
+        <Flex mt={6} justifyContent="center">
+          {projects.length !== list.length ? (
+            <Button size="lg" colorScheme="teal" onClick={() => seeMore()}>
+              {t('porfolio.see_more')}
+            </Button>
+          ) : (
+            <></>
+          )}
+        </Flex>
+      </Box>
+    </>
   );
 };

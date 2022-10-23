@@ -10,7 +10,16 @@ export const projectsTheme = {
       'stackList'
     ],
     baseStyle: {
-      root: {
+      accent: {
+        background: {
+          sm: 'none',
+          md: 'teal.400',
+          lg: 'teal.400',
+          xl: 'teal.400',
+          '2xl': 'teal.400'
+        },
+      },
+      container: {
         p: {
           base: '10px 20px 10px',
           md: '10px 20px 10px 120px',
@@ -19,12 +28,33 @@ export const projectsTheme = {
           '2xl': '50px 300px'
         },
         fontFamily: '"Nunito", sans-serif',
-        fontSize: 'md'
+        fontSize: 'md',
+        marginTop: {
+          base: 0,
+          md: '-150px',
+          lg: '-200px',
+          xl: '-200px',
+          '2xl': '-200px',
+        }
       },
       title: {
         fontSize: {
           base: '4xl',
           md: '5xl'
+        },
+        p: {
+          base: '20px 10px 10px 20px',
+          md: '10px 0 150px 120px',
+          lg: '10px 120px 150px',
+          xl: '10px 150px 150px',
+          '2xl': '10px 300px 150px'
+        },
+        color: {
+          base: 'black',
+          md: 'white',
+          lg: 'white',
+          xl: 'white',
+          '2xl': 'white'
         },
         fontWeight: 'bold',
         fontFamily: '"JetBrains Mono", monospace'
@@ -46,7 +76,8 @@ export const projectsTheme = {
         justifyContent: 'space-between',
         marginTop: '10px',
         transitionDuration: '0.5s',
-        boxShadow: 'rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px'
+        boxShadow: 'rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px',
+        background: 'white',
       },
       projectName: {
         alignSelf: 'center',
