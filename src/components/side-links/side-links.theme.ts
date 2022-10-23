@@ -9,7 +9,11 @@ export const sideLinksTheme = {
           base: '12px',
           md: '45px'
         },
-        gap: '6'
+        gap: '6',
+        display: {
+          base: 'none',
+          md: 'grid'
+        }
       },
       line: {
         color: 'black',
