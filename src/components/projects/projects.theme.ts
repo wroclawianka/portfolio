@@ -20,27 +20,26 @@ export const projectsTheme = {
         },
         minHeight: '100vh',
         fontFamily: '"Nunito", sans-serif',
-        background: 'teal.200',
         fontSize: 'md'
       },
       projectsGrid: {
         gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
-        gap: 4
+        gap: 6
       },
       projectHover: {
         marginTop: '0px',
-        marginBottom: '10px'
+        marginBottom: '10px',
+        boxShadow: 'rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;'
       },
       projectBox: {
         h: '100%',
         minHeight: '250px',
         borderRadius: '10px',
-        background: 'white',
         flexDirection: 'column',
         justifyContent: 'space-between',
         marginTop: '10px',
         transitionDuration: '0.5s',
-        border: '2px solid black'
+        boxShadow: 'rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px'
       },
       title: {
         alignSelf: 'center',
