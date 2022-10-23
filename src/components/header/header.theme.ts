@@ -10,10 +10,7 @@ export const headerTheme = {
         gridAutoFlow: 'column',
         justifyContent: 'space-between',
         zIndex: '1',
-        height: {
-          base: '60px',
-          md: '90px'
-        },
+        height: '65px',
         p: {
           base: '0 6px',
           md: '0 45px'
