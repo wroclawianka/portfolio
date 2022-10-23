@@ -21,6 +21,14 @@ export const projectsTheme = {
         fontFamily: '"Nunito", sans-serif',
         fontSize: 'md'
       },
+      title: {
+        fontSize: {
+          base: '4xl',
+          md: '5xl'
+        },
+        fontWeight: 'bold',
+        fontFamily: '"JetBrains Mono", monospace'
+      },
       projectsGrid: {
         gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
         gap: 6
@@ -40,7 +48,7 @@ export const projectsTheme = {
         transitionDuration: '0.5s',
         boxShadow: 'rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px'
       },
-      title: {
+      projectName: {
         alignSelf: 'center',
         fontWeight: 'bold',
         fontSize: 'lg',
@@ -49,7 +57,8 @@ export const projectsTheme = {
       links: {
         gap: 2,
         gridAutoFlow: 'column',
-        justifyContent: 'end'
+        justifyContent: 'end',
+        p: '2'
       },
       content: {
         p: '15px'

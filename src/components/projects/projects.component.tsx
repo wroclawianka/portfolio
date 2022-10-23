@@ -29,6 +29,9 @@ export const Projects = () => {
 
   return (
     <Box sx={style.root}>
+      <Box>
+        <Text fontSize={"5xl"} sx={style.title}>Projects</Text>
+      </Box>
       <Grid sx={style.projectsGrid}>
         {list.map(({ title, webpage, repo, description, stack }) => (
           <GridItem key={title}>
@@ -59,7 +62,7 @@ export const Projects = () => {
                   )}
                 </Grid>
                 <Box sx={style.content}>
-                  <Text sx={style.title}>{title}</Text>
+                  <Text sx={style.projectName}>{title}</Text>
                   <Text>{description}</Text>
                 </Box>
               </Box>
