@@ -2,7 +2,7 @@
   "name": "porfolio-ts",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://wroclawianka.github.io/portfolio-ts",
+  "homepage": "https://wroclawianka.github.io/portfolio",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.10",
     "@chakra-ui/react": "^2.3.4",
