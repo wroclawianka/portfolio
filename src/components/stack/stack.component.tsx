@@ -3,7 +3,7 @@ import reactIcon from './../../assets/stack/react.png';
 import reduxIcon from './../../assets/stack/redux.png';
 import apolloIcon from './../../assets/stack/apollo.png';
 import tsIcon from './../../assets/stack/ts.png';
-import jsIcon from './../../assets/stack/js.png';
+import jsIcon from './../../assets/stack/js.jpg';
 import es6Icon from './../../assets/stack/es6.png';
 import sbIcon from './../../assets/stack/storybook.png';
 import chakraUIIcon from './../../assets/stack/chakra_ui.jpg';
@@ -29,21 +29,21 @@ export const Stack = () => {
     // { alt: "React Native", src: reactIcon },
     { alt: "Redux", src: reduxIcon },
     { alt: "Apollo GraphQL", src: apolloIcon },
+    { alt: "EcmaScript 6", src: es6Icon },
     { alt: "TypeScript", src: tsIcon },
     { alt: "JavaScript", src: jsIcon },
-    { alt: "EcmaScript 6", src: es6Icon },
     { alt: "Storybook", src: sbIcon },
     { alt: "Chakra UI", src: chakraUIIcon },
-    { alt: "Matrrial UI", src: muiIcon },
     { alt: "Semantic UI", src: semanticIcon },
+    { alt: "Matrial UI", src: muiIcon },
     { alt: "Bootstrap", src: bootstrapIcon },
     { alt: "Jest", src: jestIcon },
     { alt: "Playwright", src: playwrightIcon },
     { alt: "Cypress", src: cypressIcon },
     { alt: "Selenium", src: seleniumIcon },
-    { alt: "Sass", src: sassIcon },
     { alt: "CSS", src: cssIcon },
     { alt: "HTML", src: htmlIcon },
+    { alt: "Sass", src: sassIcon },
     { alt: "jQuery", src: jQueryIcon },
   ]
 
@@ -52,9 +52,8 @@ export const Stack = () => {
       <Image
         src={src}
         alt={alt}
-        maxH={"80px"}
         sx={style.icon}
         _hover={style.iconHover}
-    />)
+      />)
   }</Grid>;
 };
