@@ -30,7 +30,9 @@ export const Projects = () => {
   return (
     <>
       <Box sx={style.accent}>
-        <Text fontSize={"5xl"} sx={style.title}>Projects</Text>
+        <Text fontSize={'5xl'} sx={style.title}>
+          Projects
+        </Text>
       </Box>
       <Box sx={style.container}>
         <Grid sx={style.projectsGrid}>

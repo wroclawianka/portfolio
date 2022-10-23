@@ -17,7 +17,7 @@ export const projectsTheme = {
           lg: 'teal.400',
           xl: 'teal.400',
           '2xl': 'teal.400'
-        },
+        }
       },
       container: {
         p: {
@@ -34,7 +34,7 @@ export const projectsTheme = {
           md: '-150px',
           lg: '-200px',
           xl: '-200px',
-          '2xl': '-200px',
+          '2xl': '-200px'
         }
       },
       title: {
@@ -76,8 +76,9 @@ export const projectsTheme = {
         justifyContent: 'space-between',
         marginTop: '10px',
         transitionDuration: '0.5s',
-        boxShadow: 'rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px',
-        background: 'white',
+        boxShadow:
+          'rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px',
+        background: 'white'
       },
       projectName: {
         alignSelf: 'center',

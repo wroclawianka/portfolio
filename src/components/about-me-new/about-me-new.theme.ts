@@ -8,7 +8,7 @@ export const aboutMeNewTheme = {
           md: 'teal.400',
           lg: 'teal.400',
           xl: 'teal.400',
-          '2xl': 'teal.400',
+          '2xl': 'teal.400'
         },
         color: {
           base: 'black',
@@ -24,7 +24,7 @@ export const aboutMeNewTheme = {
           lg: '50px 20px 50px 120px',
           xl: '50px 150px',
           '2xl': '50px 300px'
-        },
+        }
       },
       title: {
         fontSize: {
@@ -33,7 +33,7 @@ export const aboutMeNewTheme = {
         },
         fontWeight: 'bold',
         fontFamily: '"JetBrains Mono", monospace'
-      },
+      }
     }
   }
 };

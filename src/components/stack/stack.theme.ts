@@ -15,7 +15,7 @@ export const stackTheme = {
           md: 'repeat(10, 60px)',
           lg: 'repeat(10, 60px)',
           xl: 'repeat(20, 60px)',
-          '2xl': 'repeat(20, 60px)',
+          '2xl': 'repeat(20, 60px)'
         },
         gridAutoFlow: 'dense',
         gap: 1,
@@ -23,7 +23,7 @@ export const stackTheme = {
       },
       box: {
         height: '60px',
-        width: '60px',
+        width: '60px'
       },
       icon: {
         height: '60px',
@@ -32,8 +32,7 @@ export const stackTheme = {
         transition: '0.5s'
       },
       iconHover: {
-        filter: 'grayscale(0)',
-
+        filter: 'grayscale(0)'
       }
     }
   }

@@ -1,4 +1,4 @@
-import { Box, Grid, GridItem, Image, useMultiStyleConfig } from '@chakra-ui/react';
+import { Grid, Image, useMultiStyleConfig } from '@chakra-ui/react';
 import reactIcon from './../../assets/stack/react.png';
 import reduxIcon from './../../assets/stack/redux.png';
 import apolloIcon from './../../assets/stack/apollo.png';
@@ -22,41 +22,39 @@ import jQueryIcon from './../../assets/stack/jQuery.png';
 export const Stack = () => {
   const style = useMultiStyleConfig('stack', {});
 
-
-
   const stack = [
-    { alt: "React", src: reactIcon },
-    // { alt: "React Native", src: reactIcon },
-    { alt: "Redux", src: reduxIcon },
-    { alt: "Apollo GraphQL", src: apolloIcon },
-    { alt: "EcmaScript 6", src: es6Icon },
-    { alt: "TypeScript", src: tsIcon },
-    { alt: "JavaScript", src: jsIcon },
-    { alt: "Storybook", src: sbIcon },
-    { alt: "Chakra UI", src: chakraUIIcon },
-    { alt: "Semantic UI", src: semanticIcon },
-    { alt: "Matrial UI", src: muiIcon },
-    { alt: "Bootstrap", src: bootstrapIcon },
-    { alt: "Jest", src: jestIcon },
-    { alt: "Playwright", src: playwrightIcon },
-    { alt: "Cypress", src: cypressIcon },
-    { alt: "Selenium", src: seleniumIcon },
-    { alt: "CSS", src: cssIcon },
-    { alt: "HTML", src: htmlIcon },
-    { alt: "Sass", src: sassIcon },
-    { alt: "jQuery", src: jQueryIcon },
-  ]
+    { alt: 'React', src: reactIcon },
+    { alt: 'Redux', src: reduxIcon },
+    { alt: 'Apollo GraphQL', src: apolloIcon },
+    { alt: 'EcmaScript 6', src: es6Icon },
+    { alt: 'TypeScript', src: tsIcon },
+    { alt: 'JavaScript', src: jsIcon },
+    { alt: 'Storybook', src: sbIcon },
+    { alt: 'Chakra UI', src: chakraUIIcon },
+    { alt: 'Semantic UI', src: semanticIcon },
+    { alt: 'Matrial UI', src: muiIcon },
+    { alt: 'Bootstrap', src: bootstrapIcon },
+    { alt: 'Jest', src: jestIcon },
+    { alt: 'Playwright', src: playwrightIcon },
+    { alt: 'Cypress', src: cypressIcon },
+    { alt: 'Selenium', src: seleniumIcon },
+    { alt: 'CSS', src: cssIcon },
+    { alt: 'HTML', src: htmlIcon },
+    { alt: 'Sass', src: sassIcon },
+    { alt: 'jQuery', src: jQueryIcon }
+  ];
 
-  return <Grid sx={style.root}>{
-    stack.map(({ alt, src }) =>
-      // <GridItem sx={style.box}>
+  return (
+    <Grid sx={style.root}>
+      {stack.map(({ alt, src }) => (
         <Image
-        src={src}
-        alt={alt}
-        sx={style.icon}
-        _hover={style.iconHover}
-      />
-      // </GridItem>
-      )
-  }</Grid>;
+          src={src}
+          alt={alt}
+          key={alt}
+          sx={style.icon}
+          _hover={style.iconHover}
+        />
+      ))}
+    </Grid>
+  );
 };
