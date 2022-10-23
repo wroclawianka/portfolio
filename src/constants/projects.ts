@@ -4,8 +4,8 @@ import i18n from './../i18n';
 export const projects: project[] = [
   {
     title: i18n.t('project.porfolio_2022.title'),
-    webpage: 'https://wroclawianka.github.io/portfolio-ts/',
-    repo: 'https://github.com/wroclawianka/portfolio-ts',
+    webpage: 'https://wroclawianka.github.io/portfolio/',
+    repo: 'https://github.com/wroclawianka/portfolio',
     stack: ['React', 'Redux', 'TypeScript', 'Chakra UI'],
     description: i18n.t('project.porfolio_2022.description'),
     year: 2022
@@ -58,8 +58,8 @@ export const projects: project[] = [
   },
   {
     title: i18n.t('project.portfolio_2019.title'),
-    webpage: 'https://wroclawianka.github.io/portfolio',
-    repo: 'https://github.com/wroclawianka/portfolio',
+    webpage: 'https://wroclawianka.github.io/portfolio-2019',
+    repo: 'https://github.com/wroclawianka/portfolio-2019',
     stack: ['React', 'JavaScript', 'CSS', 'HTML'],
     description: i18n.t('project.portfolio_2019.description'),
     year: 2019
