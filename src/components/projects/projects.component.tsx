@@ -80,7 +80,7 @@ export const Projects = () => {
             </GridItem>
           ))}
         </Grid>
-        <Flex mt={6} justifyContent="center">
+        <Flex mt={10} mb={5} justifyContent="center">
           {projects.length !== list.length ? (
             <Button size="lg" colorScheme="teal" onClick={() => seeMore()}>
               {t('porfolio.see_more')}
