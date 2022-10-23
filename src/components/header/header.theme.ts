@@ -17,6 +17,10 @@ export const headerTheme = {
         p: {
           base: '0 6px',
           md: '0 45px'
+        },
+        display: {
+          base: 'none',
+          md: 'grid'
         }
       },
       heading: {

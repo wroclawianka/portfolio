@@ -12,13 +12,12 @@ export const projectsTheme = {
     baseStyle: {
       root: {
         p: {
-          base: '10px 20px 10px 70px',
+          base: '10px 20px 10px',
           md: '10px 20px 10px 120px',
           lg: '50px 20px 50px 120px',
           xl: '50px 150px',
           '2xl': '50px 300px'
         },
-        minHeight: '100vh',
         fontFamily: '"Nunito", sans-serif',
         fontSize: 'md'
       },
