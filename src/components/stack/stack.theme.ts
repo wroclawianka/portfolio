@@ -23,8 +23,7 @@ export const stackTheme = {
       },
       box: {
         height: '60px',
-        width: '60px',
-        background: 'red'
+        width: '60px'
       },
       icon: {
         margin: 'auto',
