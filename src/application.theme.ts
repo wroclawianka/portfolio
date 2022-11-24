@@ -1,6 +1,6 @@
 import { extendTheme } from '@chakra-ui/react';
 import {
-  aboutMeNewTheme,
+  aboutMeTheme,
   animatedAvatarTheme,
   footerTheme,
   headerTheme,
@@ -21,7 +21,7 @@ export const theme = extendTheme({
     ...windowTheme,
     ...projectsTheme,
     ...animatedAvatarTheme,
-    ...aboutMeNewTheme
+    ...aboutMeTheme
   },
   breakpoints: {
     sm: '30em',

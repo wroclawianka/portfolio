@@ -1,39 +1,38 @@
 export const aboutMeTheme = {
   aboutMe: {
-    parts: ['root', 'first', 'second', 'third'],
+    parts: ['root'],
     baseStyle: {
       root: {
-        background: 'teal.200',
-        minHeight: '100vh',
-        padding: {
-          base: '30px 20px 30px 70px',
-          md: '30px 20px 30px 120px',
-          xl: '80px 280px'
+        background: {
+          base: 'none',
+          md: 'teal.400',
+          lg: 'teal.400',
+          xl: 'teal.400',
+          '2xl': 'teal.400'
         },
-        gap: '20px',
-        gridTemplateAreas: {
-          base: `
-          "first"
-          "second"
-          "third"
-          `,
-          lg: `
-          " . . . first first first ."
-          "second second second first first first ."
-          "second second second . third third third"
-          " . . . . third third third"
-          `
+        color: {
+          base: 'black',
+          md: 'white',
+          lg: 'white',
+          xl: 'white',
+          '2xl': 'white'
         },
-        fontFamily: '"Nunito", sans-serif'
+        fontFamily: '"Nunito", sans-serif',
+        p: {
+          base: '10px 20px 10px',
+          md: '10px 20px 10px 120px',
+          lg: '50px 20px 50px 120px',
+          xl: '50px 150px',
+          '2xl': '50px 300px'
+        }
       },
-      first: {
-        gridArea: 'first'
-      },
-      second: {
-        gridArea: 'second'
-      },
-      third: {
-        gridArea: 'third'
+      title: {
+        fontSize: {
+          base: '4xl',
+          md: '5xl'
+        },
+        fontWeight: 'bold',
+        fontFamily: '"JetBrains Mono", monospace'
       }
     }
   }

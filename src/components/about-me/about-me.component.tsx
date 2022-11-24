@@ -1,21 +1,15 @@
-import { Grid, GridItem, useMultiStyleConfig } from '@chakra-ui/react';
-import { Window } from '../window';
-import json from './about-me.json';
+import { Grid, GridItem, Text, useMultiStyleConfig } from '@chakra-ui/react';
+import { useTranslation } from 'react-i18next';
 
-export const AboutMe = () => {
+export const AboutMeNew = () => {
+  const { t } = useTranslation();
   const style = useMultiStyleConfig('aboutMe', {});
-  const sections = json.sections;
 
   return (
     <Grid sx={style.root}>
-      <GridItem sx={style.first}>
-        <Window title={sections.first.title} text={sections.first.content} />
-      </GridItem>
-      <GridItem sx={style.second}>
-        <Window title={sections.second.title} text={sections.second.content} />
-      </GridItem>
-      <GridItem sx={style.third}>
-        <Window title={sections.third.title} text={sections.third.content} />
+      <GridItem>
+        <Text sx={style.title}>About me</Text>
+        <Text fontSize="lg">{t('aboutMe')}</Text>
       </GridItem>
     </Grid>
   );

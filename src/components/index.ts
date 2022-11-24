@@ -1,5 +1,4 @@
 export * from './header';
-export * from './footer';
 export * from './intro';
 export * from './about-me';
 export * from './stack';
@@ -8,4 +7,3 @@ export * from './window';
 export * from './projects';
 export * from './icons';
 export * from './animated-avatar';
-export * from './about-me-new';
