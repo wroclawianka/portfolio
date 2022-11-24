@@ -1,4 +1,4 @@
-import { Grid, Image, useMultiStyleConfig } from '@chakra-ui/react';
+import { Box, Grid, Image, useMultiStyleConfig } from '@chakra-ui/react';
 import reactIcon from './../../assets/stack/react.png';
 import reduxIcon from './../../assets/stack/redux.png';
 import apolloIcon from './../../assets/stack/apollo.png';
@@ -47,13 +47,9 @@ export const Stack = () => {
   return (
     <Grid sx={style.root}>
       {stack.map(({ alt, src }) => (
-        <Image
-          src={src}
-          alt={alt}
-          key={alt}
-          sx={style.icon}
-          _hover={style.iconHover}
-        />
+        <Box sx={style.box} key={alt}>
+          <Image src={src} alt={alt} sx={style.icon} _hover={style.iconHover} />
+        </Box>
       ))}
     </Grid>
   );

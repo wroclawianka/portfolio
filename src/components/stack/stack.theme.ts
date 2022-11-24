@@ -23,16 +23,19 @@ export const stackTheme = {
       },
       box: {
         height: '60px',
-        width: '60px'
+        width: '60px',
+        background: 'red'
       },
       icon: {
-        height: '60px',
-        width: '60px',
-        filter: 'grayscale(0.6)',
-        transition: '0.5s'
+        margin: 'auto',
+        display: 'block',
+        height: '51px',
+        width: '51px',
+        transition: '0.6s'
       },
       iconHover: {
-        filter: 'grayscale(0)'
+        height: '60px',
+        width: '60px'
       }
     }
   }
