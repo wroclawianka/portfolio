@@ -2,7 +2,6 @@ import { extendTheme } from '@chakra-ui/react';
 import {
   aboutMeTheme,
   animatedAvatarTheme,
-  footerTheme,
   headerTheme,
   introTheme,
   projectsTheme,
@@ -13,7 +12,6 @@ import { sideLinksTheme } from './components/side-links';
 
 export const theme = extendTheme({
   components: {
-    ...footerTheme,
     ...headerTheme,
     ...introTheme,
     ...stackTheme,
