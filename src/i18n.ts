@@ -38,7 +38,7 @@ i18n
             porfolio_2022: {
               title: 'Portfolio 2022',
               description:
-                'Personal portfolio webpage you are currently visiting :) '
+                'Personal portfolio webpage you are currently visiting'
             },
             vote_for_me: {
               title: 'Vote for me',
