@@ -30,7 +30,7 @@ i18n
               'I am spcialized in web applications. Currently building with React, Redux and TypeScript stack.'
           },
           aboutMe:
-            "I started my journey with IT as QA Engineer, by breaking things and finding inconsistencies. I liked this field, but I've decided to rather fix them as a Developer. Since 2018 I'm diving into front-end technologies. First, it was old-school AngularJS and JavaScript. Today I am spending my days accompanied by Typescript, React, Redux, and various technologies around. Front-end is my main specialization, but I am not afraid to make my hands dirty with some back-end code, AWS, GCP, or test automation.",
+            "I started my journey with IT as QA Engineer, by breaking things and finding inconsistencies. I enjoyed this field, but I've decided to rather fix them as a Developer. Since 2018 I am diving into front-end technologies. First, it was old-school AngularJS and JavaScript. Today I am spending my days accompanied by Typescript, React, Redux, and various technologies around. Front-end is my main specialization, though I am not afraid to make my hands dirty with some back-end code, AWS, GCP, or test automation.",
           porfolio: {
             repositorium: 'Repositorium',
             website: 'Website',
