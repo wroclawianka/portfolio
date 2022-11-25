@@ -8,6 +8,7 @@ import {
   Link,
   List,
   ListItem,
+  SlideFade,
   Text,
   useMultiStyleConfig
 } from '@chakra-ui/react';
@@ -36,49 +37,51 @@ export const Projects = () => {
       </Box>
       <Box sx={style.container}>
         <Grid sx={style.projectsGrid}>
-          {list.map(({ title, webpage, repo, description, stack }) => (
+          {list.map(({ title, webpage, repo, description, stack }, index) => (
             <GridItem key={title}>
-              <Flex sx={style.projectBox} _hover={style.projectHover}>
-                <Box>
-                  <Grid sx={style.links}>
-                    <Link href={repo}>
-                      <IconButton
-                        size="md"
-                        variant="ghost"
-                        aria-label={t('porfolio.repositorium')}
-                        colorScheme="teal"
-                        icon={<GitHubIcon />}
-                      />
-                    </Link>
-                    {webpage ? (
-                      <Link href={webpage}>
+              <SlideFade in={index <= list.length} offsetY="20px">
+                <Flex sx={style.projectBox} _hover={style.projectHover}>
+                  <Box>
+                    <Grid sx={style.links}>
+                      <Link href={repo}>
                         <IconButton
                           size="md"
                           variant="ghost"
-                          aria-label={t('porfolio.website')}
+                          aria-label={t('porfolio.repositorium')}
                           colorScheme="teal"
-                          icon={<ExternalLinkIcon />}
+                          icon={<GitHubIcon />}
                         />
                       </Link>
-                    ) : (
-                      <></>
-                    )}
-                  </Grid>
-                  <Box sx={style.content}>
-                    <Text sx={style.projectName}>{title}</Text>
-                    <Text>{description}</Text>
+                      {webpage ? (
+                        <Link href={webpage}>
+                          <IconButton
+                            size="md"
+                            variant="ghost"
+                            aria-label={t('porfolio.website')}
+                            colorScheme="teal"
+                            icon={<ExternalLinkIcon />}
+                          />
+                        </Link>
+                      ) : (
+                        <></>
+                      )}
+                    </Grid>
+                    <Box sx={style.content}>
+                      <Text sx={style.projectName}>{title}</Text>
+                      <Text>{description}</Text>
+                    </Box>
                   </Box>
-                </Box>
-                <Box>
-                  <Text sx={style.stackText}>
-                    <List sx={style.stackList}>
-                      {stack.map((el) => (
-                        <ListItem key={el}>{el}</ListItem>
-                      ))}
-                    </List>
-                  </Text>
-                </Box>
-              </Flex>
+                  <Box>
+                    <Text sx={style.stackText}>
+                      <List sx={style.stackList}>
+                        {stack.map((el) => (
+                          <ListItem key={el}>{el}</ListItem>
+                        ))}
+                      </List>
+                    </Text>
+                  </Box>
+                </Flex>
+              </SlideFade>
             </GridItem>
           ))}
         </Grid>
