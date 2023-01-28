@@ -30,11 +30,6 @@ export const stackTheme = {
         display: 'block',
         height: '51px',
         width: '51px',
-        transition: '0.6s'
-      },
-      iconHover: {
-        height: '60px',
-        width: '60px'
       }
     }
   }

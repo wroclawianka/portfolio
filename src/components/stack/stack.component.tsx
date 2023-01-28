@@ -1,4 +1,11 @@
-import { Box, Grid, Image, useMultiStyleConfig } from '@chakra-ui/react';
+import {
+  Box,
+  Grid,
+  Image,
+  keyframes,
+  useMultiStyleConfig,
+  usePrefersReducedMotion
+} from '@chakra-ui/react';
 import reactIcon from './../../assets/stack/react.png';
 import reduxIcon from './../../assets/stack/redux.png';
 import apolloIcon from './../../assets/stack/apollo.png';
@@ -18,37 +25,54 @@ import sassIcon from './../../assets/stack/sass.png';
 import cssIcon from './../../assets/stack/css.png';
 import htmlIcon from './../../assets/stack/html.png';
 import jQueryIcon from './../../assets/stack/jQuery.png';
+import { useState } from 'react';
+
+const spin = keyframes`
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+`;
+
+const stack = [
+  { alt: 'React', src: reactIcon },
+  { alt: 'Redux', src: reduxIcon },
+  { alt: 'Apollo GraphQL', src: apolloIcon },
+  { alt: 'EcmaScript 6', src: es6Icon },
+  { alt: 'TypeScript', src: tsIcon },
+  { alt: 'JavaScript', src: jsIcon },
+  { alt: 'Storybook', src: sbIcon },
+  { alt: 'Chakra UI', src: chakraUIIcon },
+  { alt: 'Semantic UI', src: semanticIcon },
+  { alt: 'Matrial UI', src: muiIcon },
+  { alt: 'Bootstrap', src: bootstrapIcon },
+  { alt: 'Jest', src: jestIcon },
+  { alt: 'Playwright', src: playwrightIcon },
+  { alt: 'Cypress', src: cypressIcon },
+  { alt: 'Selenium', src: seleniumIcon },
+  { alt: 'CSS', src: cssIcon },
+  { alt: 'HTML', src: htmlIcon },
+  { alt: 'Sass', src: sassIcon },
+  { alt: 'jQuery', src: jQueryIcon }
+];
 
 export const Stack = () => {
   const style = useMultiStyleConfig('stack', {});
+  const prefersReducedMotion = usePrefersReducedMotion();
+  const [hover, setHover] = useState<number | undefined>(undefined);
 
-  const stack = [
-    { alt: 'React', src: reactIcon },
-    { alt: 'Redux', src: reduxIcon },
-    { alt: 'Apollo GraphQL', src: apolloIcon },
-    { alt: 'EcmaScript 6', src: es6Icon },
-    { alt: 'TypeScript', src: tsIcon },
-    { alt: 'JavaScript', src: jsIcon },
-    { alt: 'Storybook', src: sbIcon },
-    { alt: 'Chakra UI', src: chakraUIIcon },
-    { alt: 'Semantic UI', src: semanticIcon },
-    { alt: 'Matrial UI', src: muiIcon },
-    { alt: 'Bootstrap', src: bootstrapIcon },
-    { alt: 'Jest', src: jestIcon },
-    { alt: 'Playwright', src: playwrightIcon },
-    { alt: 'Cypress', src: cypressIcon },
-    { alt: 'Selenium', src: seleniumIcon },
-    { alt: 'CSS', src: cssIcon },
-    { alt: 'HTML', src: htmlIcon },
-    { alt: 'Sass', src: sassIcon },
-    { alt: 'jQuery', src: jQueryIcon }
-  ];
+  const animation = prefersReducedMotion ? undefined : `${spin} 1 10s linear`;
 
   return (
     <Grid sx={style.root}>
-      {stack.map(({ alt, src }) => (
+      {stack.map(({ alt, src }, index) => (
         <Box sx={style.box} key={alt}>
-          <Image src={src} alt={alt} sx={style.icon} _hover={style.iconHover} />
+          <Image
+            src={src}
+            alt={alt}
+            sx={style.icon}
+            animation={hover === index ? animation : undefined}
+            onMouseOver={() => setHover(index)}
+            onMouseOut={() => setHover(undefined)}
+          />
         </Box>
       ))}
     </Grid>
