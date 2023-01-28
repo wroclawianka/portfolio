@@ -2,6 +2,8 @@ import {
   Box,
   Grid,
   Image,
+  Link,
+  Tooltip,
   keyframes,
   useMultiStyleConfig,
   usePrefersReducedMotion
@@ -25,6 +27,7 @@ import sassIcon from './../../assets/stack/sass.png';
 import cssIcon from './../../assets/stack/css.png';
 import htmlIcon from './../../assets/stack/html.png';
 import jQueryIcon from './../../assets/stack/jQuery.png';
+import postmanIcon from './../../assets/stack/postman.png';
 import { useState } from 'react';
 
 const spin = keyframes`
@@ -33,25 +36,86 @@ const spin = keyframes`
 `;
 
 const stack = [
-  { alt: 'React', src: reactIcon },
-  { alt: 'Redux', src: reduxIcon },
-  { alt: 'Apollo GraphQL', src: apolloIcon },
-  { alt: 'EcmaScript 6', src: es6Icon },
-  { alt: 'TypeScript', src: tsIcon },
-  { alt: 'JavaScript', src: jsIcon },
-  { alt: 'Storybook', src: sbIcon },
-  { alt: 'Chakra UI', src: chakraUIIcon },
-  { alt: 'Semantic UI', src: semanticIcon },
-  { alt: 'Matrial UI', src: muiIcon },
-  { alt: 'Bootstrap', src: bootstrapIcon },
-  { alt: 'Jest', src: jestIcon },
-  { alt: 'Playwright', src: playwrightIcon },
-  { alt: 'Cypress', src: cypressIcon },
-  { alt: 'Selenium', src: seleniumIcon },
-  { alt: 'CSS', src: cssIcon },
-  { alt: 'HTML', src: htmlIcon },
-  { alt: 'Sass', src: sassIcon },
-  { alt: 'jQuery', src: jQueryIcon }
+  {
+    alt: 'React',
+    src: reactIcon,
+    href: 'https://reactjs.org/'
+  },
+  {
+    alt: 'Redux',
+    src: reduxIcon,
+    href: 'https://react-redux.js.org/'
+  },
+  {
+    alt: 'Apollo GraphQL',
+    src: apolloIcon,
+    href: 'https://www.apollographql.com/'
+  },
+  { alt: 'EcmaScript 6', src: es6Icon, href: undefined },
+  {
+    alt: 'TypeScript',
+    src: tsIcon,
+    href: 'https://www.typescriptlang.org/'
+  },
+  { alt: 'JavaScript', src: jsIcon, href: undefined },
+  {
+    alt: 'Storybook',
+    src: sbIcon,
+    href: 'https://storybook.js.org/'
+  },
+  {
+    alt: 'Chakra UI',
+    src: chakraUIIcon,
+    href: 'https://chakra-ui.com/'
+  },
+  {
+    alt: 'Semantic UI',
+    src: semanticIcon,
+    href: 'https://semantic-ui.com/'
+  },
+  {
+    alt: 'Material UI',
+    src: muiIcon,
+    href: 'https://mui.com/'
+  },
+  {
+    alt: 'Bootstrap',
+    src: bootstrapIcon,
+    href: 'https://getbootstrap.com/'
+  },
+  {
+    alt: 'Postman',
+    src: postmanIcon,
+    href: 'https://www.postman.com/'
+  },
+  { alt: 'Jest', src: jestIcon, href: 'https://jestjs.io/' },
+  {
+    alt: 'Playwright',
+    src: playwrightIcon,
+    href: 'https://playwright.dev/'
+  },
+  {
+    alt: 'Cypress',
+    src: cypressIcon,
+    href: 'https://www.cypress.io/'
+  },
+  {
+    alt: 'Selenium',
+    src: seleniumIcon,
+    href: 'https://www.selenium.dev/'
+  },
+  { alt: 'CSS', src: cssIcon, href: undefined },
+  { alt: 'HTML', src: htmlIcon, href: undefined },
+  {
+    alt: 'Sass',
+    src: sassIcon,
+    href: 'https://sass-lang.com/'
+  },
+  {
+    alt: 'jQuery',
+    src: jQueryIcon,
+    href: 'https://jquery.com/'
+  }
 ];
 
 export const Stack = () => {
@@ -63,16 +127,30 @@ export const Stack = () => {
 
   return (
     <Grid sx={style.root}>
-      {stack.map(({ alt, src }, index) => (
+      {stack.map(({ alt, src, href }, index) => (
         <Box sx={style.box} key={alt}>
-          <Image
-            src={src}
-            alt={alt}
-            sx={style.icon}
-            animation={hover === index ? animation : undefined}
-            onMouseOver={() => setHover(index)}
-            onMouseOut={() => setHover(undefined)}
-          />
+          <Tooltip
+            label={alt}
+            openDelay={700}
+            closeDelay={700}
+            bg="grey.50"
+            color="black"
+          >
+            <Link
+              href={href}
+              isExternal
+              cursor={href ? 'pointer' : 'initial'}
+            >
+              <Image
+                src={src}
+                alt={alt}
+                sx={style.icon}
+                animation={hover === index ? animation : undefined}
+                onMouseOver={() => setHover(index)}
+                onMouseOut={() => setHover(undefined)}
+              />
+            </Link>
+          </Tooltip>
         </Box>
       ))}
     </Grid>

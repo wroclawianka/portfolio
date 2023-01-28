@@ -29,7 +29,7 @@ export const stackTheme = {
         margin: 'auto',
         display: 'block',
         height: '51px',
-        width: '51px',
+        width: '51px'
       }
     }
   }
