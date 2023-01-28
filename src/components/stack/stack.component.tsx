@@ -136,11 +136,7 @@ export const Stack = () => {
             bg="grey.50"
             color="black"
           >
-            <Link
-              href={href}
-              isExternal
-              cursor={href ? 'pointer' : 'initial'}
-            >
+            <Link href={href} isExternal cursor={href ? 'pointer' : 'initial'}>
               <Image
                 src={src}
                 alt={alt}
