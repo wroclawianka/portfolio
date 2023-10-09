@@ -21,11 +21,6 @@ export const SideLinks = () => {
       label: 'GitHiub',
       href: 'https://github.com/wroclawianka',
       children: <GitHubIcon />
-    },
-    {
-      label: 'Twitter',
-      href: 'https://twitter.com/dorotazelga',
-      children: <TwitterIcon />
     }
   ];
 

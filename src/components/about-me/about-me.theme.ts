@@ -33,6 +33,9 @@ export const aboutMeTheme = {
         },
         fontWeight: 'bold',
         fontFamily: '"JetBrains Mono", monospace'
+      },
+      paragraph: {
+        paddingBottom: '10px'
       }
     }
   }

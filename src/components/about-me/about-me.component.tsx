@@ -3,13 +3,18 @@ import { useTranslation } from 'react-i18next';
 
 export const AboutMeNew = () => {
   const { t } = useTranslation();
-  const style = useMultiStyleConfig('aboutMe', {});
+  const { root, title, paragraph } = useMultiStyleConfig('aboutMe', {});
 
   return (
-    <Grid sx={style.root}>
+    <Grid sx={root}>
       <GridItem>
-        <Text sx={style.title}>About me</Text>
-        <Text fontSize="lg">{t('aboutMe')}</Text>
+        <Text sx={title}>About me</Text>
+        <Text fontSize="lg" sx={paragraph}>
+          {t('aboutMe.p1')}
+        </Text>
+        <Text fontSize="lg" sx={paragraph}>
+          {t('aboutMe.p2')}
+        </Text>
       </GridItem>
     </Grid>
   );

@@ -29,8 +29,10 @@ i18n
             description:
               'I am spcialized in web applications. Currently building with React, Redux and TypeScript stack.'
           },
-          aboutMe:
-            "I started my journey with IT as QA Engineer, by breaking things and finding inconsistencies. I enjoyed this field, but I've decided to rather fix them as a Developer. Since 2018 I am diving into front-end technologies. First, it was old-school AngularJS and JavaScript. Today I am spending my days accompanied by Typescript, React, Redux, and various technologies around. Front-end is my main specialization, though I am not afraid to make my hands dirty with some back-end code, AWS, GCP, or test automation.",
+          aboutMe: {
+            p1: "My IT journey began in 2014 as a QA Engineer, where I found joy in breaking things and meticulously uncovering inconsistencies. After some time, I realized my passion for fixing these issues and transitioned into a Front-end Developer. I am an enthusiast of Typescript and React, as well as the world of web development in general. Additionally, I'm an AI enthusiast, particularly enamored with Chat GPT and Github Copilot.",
+            p2: 'Being a self-learner at heart, I constantly seek out new challenges and opportunities to expand my skill set. Joining multiple international teams has broadened my horizons, allowing me to collaborate with diverse talents and cultures. I am an avid advocate of Agile methodologies and always strive to be a proactive team player.'
+          },
           porfolio: {
             repositorium: 'Repositorium',
             website: 'Website',
@@ -40,80 +42,87 @@ i18n
             porfolio_2022: {
               title: 'Portfolio 2022',
               description:
-                'Personal portfolio webpage you are currently visiting'
+                'This project is a personal portfolio webpage, showcasing various works and projects.'
             },
             vote_for_me: {
-              title: 'Vote for me',
+              title: 'Vote for Me',
               description:
-                'Create a survey, submit it, and see the results with the graphs'
+                'Build and conduct surveys, visualize the results with graphs, and gather insights from voter responses.'
             },
             dynamic_table: {
               title: 'Dynamic Table',
               description:
-                'Update the content of the table and change its properties like columns and types'
+                'Project that allows you to dynamically update the table content, modify columns, and change data types as needed.'
             },
             groceries_list: {
               title: 'Groceries List',
               description:
-                'Manage shopping list of a company. Create a list, mark and bought and specify the cost'
+                'Tool for managing a shopping list for a company, enabling item tracking, cost specification, and purchase marking.'
             },
             crypto_trcker: {
               title: 'Crypto Tracker',
               description:
-                'Track prices of the cryptocurrencies. Search them, see they prices and add to favorites'
+                'Application for tracking cryptocurrency prices, searching for specific cryptocurrencies, viewing their prices, and adding them to favorites.'
             },
             phonebook: {
               title: 'Phonebook',
               description:
-                'Full-stack phonebook application with possibility to add, read, edit and delete entries'
+                'Comprehensive full-stack phonebook application that allows users to add, read, edit, and delete contact entries.'
             },
             sorting_algoritms: {
               title: 'Sorting Algorithms',
               description:
-                'Visualization of sorting algorithms: bubble, insertion and selection'
+                'Visualize sorting algorithms, including bubble sort, insertion sort, and selection sort, to understand their functionality and performance.'
             },
             portfolio_2019: {
               title: 'Portfolio 2019',
-              description: 'Personal portfolio webpage'
+              description:
+                'Personal portfolio webpage showcasing projects and achievements.'
             },
             workshop_2018_2: {
-              title: 'Workshop website',
-              description: 'Website of a fictional car service company'
+              title: 'Workshop Website',
+              description:
+                'Website for a fictional car service company, presenting information about the services offered and the company itself.'
             },
             loan_rating_app: {
               title: 'Loan Ratings App',
               description:
-                'Calculate an average amount for loans available on marketplace of a given rating'
+                'Calculate the average loan amount available on a marketplace for loans with a specific rating.'
             },
             blog_app: {
-              title: 'Prague with my eyes',
-              description: 'Livestyle blog template with edit mode'
+              title: 'Prague with My Eyes',
+              description:
+                'Lifestyle blog template with an edit mode, allowing users to create and share their experiences about Prague.'
             },
             bookshelf: {
               title: 'Bookshelf',
               description:
-                'Check list of your books, see book details, add a new position'
+                'Manage your book collection, view book details, and add new book entries to your list.'
             },
             graphical_dashboard: {
               title: 'Graphical Dashboard',
-              description: 'Pixel perfect diagrams presenting company results'
+              description:
+                'Pixel-perfect diagrams representing company results and performance.'
             },
             ordering_app: {
               title: 'Ordering App',
               description:
-                'Place an order for the construction tools, see suggestions of the additional products to add'
+                'Place construction tool orders and receive suggestions for additional products to enhance your order.'
             },
             porfolio_2018: {
               title: 'Portfolio 2018',
-              description: 'Personal portfolio webpage'
+              description:
+                'Personal portfolio webpage displaying past projects and accomplishments.'
             },
             binary_calculator: {
               title: 'Binary Calculator',
-              description: 'Binary calculator with validation of the fields'
+              description:
+                'Binary calculator with field validation to ensure accurate calculations.'
             },
             workshop_2018_1: {
               title: 'Workshop Website',
-              description: 'Website of a fictional car service company'
+              description:
+                'Website for a fictional car service company, providing information about services and the workshop.'
             }
           }
         }
