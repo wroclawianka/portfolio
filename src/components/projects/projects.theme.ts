@@ -70,7 +70,7 @@ export const projectsTheme = {
       },
       projectBox: {
         h: '100%',
-        minHeight: '280px',
+        minHeight: '300px',
         borderRadius: '10px',
         flexDirection: 'column',
         justifyContent: 'space-between',
