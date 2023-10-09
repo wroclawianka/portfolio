@@ -101,7 +101,7 @@ export const projects: project[] = [
     webpage: 'https://graphical-dashboard.netlify.com/',
     repo: 'https://github.com/wroclawianka/graphical-dashboard',
     description: i18n.t('project.graphical_dashboard.description'),
-    stack: ['JavaScript', 'D3.js', 'Jasmine', 'CSS', 'HTML'],
+    stack: ['JavaScript', 'D3.js', 'Jasmine', 'CSS'],
     year: 2018
   },
   {

@@ -13,10 +13,10 @@ export const projectsTheme = {
       accent: {
         background: {
           sm: 'none',
-          md: 'teal.400',
-          lg: 'teal.400',
-          xl: 'teal.400',
-          '2xl': 'teal.400'
+          md: 'teal.500',
+          lg: 'teal.500',
+          xl: 'teal.500',
+          '2xl': 'teal.500'
         }
       },
       container: {
@@ -60,7 +60,7 @@ export const projectsTheme = {
         fontFamily: '"JetBrains Mono", monospace'
       },
       projectsGrid: {
-        gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
+        gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
         gap: 6
       },
       projectHover: {
@@ -70,7 +70,7 @@ export const projectsTheme = {
       },
       projectBox: {
         h: '100%',
-        minHeight: '250px',
+        minHeight: '280px',
         borderRadius: '10px',
         flexDirection: 'column',
         justifyContent: 'space-between',

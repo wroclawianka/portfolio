@@ -9,7 +9,7 @@ function App() {
         <Intro />
         <AboutMeNew />
         <Projects />
-        <Stack />
+        {/* <Stack /> */}
       </Layout>
     </ChakraProvider>
   );

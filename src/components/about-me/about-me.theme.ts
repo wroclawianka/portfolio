@@ -5,10 +5,10 @@ export const aboutMeTheme = {
       root: {
         background: {
           base: 'none',
-          md: 'teal.400',
-          lg: 'teal.400',
-          xl: 'teal.400',
-          '2xl': 'teal.400'
+          md: 'teal.500',
+          lg: 'teal.500',
+          xl: 'teal.500',
+          '2xl': 'teal.500'
         },
         color: {
           base: 'black',
@@ -35,7 +35,7 @@ export const aboutMeTheme = {
         fontFamily: '"JetBrains Mono", monospace'
       },
       paragraph: {
-        paddingBottom: '10px'
+        paddingBottom: '20px'
       }
     }
   }
