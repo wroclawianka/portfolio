@@ -1,7 +1,12 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.3a72dc31.css",
-    "main.js": "/portfolio/static/js/main.b550f79d.js",
+    "main.css": "/portfolio/static/css/main.8477ed8e.css",
+    "main.js": "/portfolio/static/js/main.b53f4d0a.js",
+    "static/media/leave_5.png": "/portfolio/static/media/leave_5.1115ee022ddd880f2118.png",
+    "static/media/leave_2.png": "/portfolio/static/media/leave_2.3dbbd7e8bebd2e04fa40.png",
+    "static/media/leave_3.png": "/portfolio/static/media/leave_3.a64f1ebdd2def53a5c21.png",
+    "static/media/leave_1.png": "/portfolio/static/media/leave_1.c4f313aa3019b4cdee0b.png",
+    "static/media/leave_4.png": "/portfolio/static/media/leave_4.776e321e8cf6d014d9f5.png",
     "static/media/dorota.jpg": "/portfolio/static/media/dorota.92ee8e38fdffd72e8980.jpg",
     "static/media/redux.png": "/portfolio/static/media/redux.f3d5affaaf6350435429.png",
     "static/media/bootstrap.png": "/portfolio/static/media/bootstrap.8df2daf9ef7af736c14b.png",
@@ -20,11 +25,11 @@
     "static/media/storybook.png": "/portfolio/static/media/storybook.1866d65b5d0e00fb4b68.png",
     "static/media/js.jpg": "/portfolio/static/media/js.266bd9fb2663dcc057b4.jpg",
     "index.html": "/portfolio/index.html",
-    "main.3a72dc31.css.map": "/portfolio/static/css/main.3a72dc31.css.map",
-    "main.b550f79d.js.map": "/portfolio/static/js/main.b550f79d.js.map"
+    "main.8477ed8e.css.map": "/portfolio/static/css/main.8477ed8e.css.map",
+    "main.b53f4d0a.js.map": "/portfolio/static/js/main.b53f4d0a.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a72dc31.css",
-    "static/js/main.b550f79d.js"
+    "static/css/main.8477ed8e.css",
+    "static/js/main.b53f4d0a.js"
   ]
 }
